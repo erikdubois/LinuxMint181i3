@@ -23,6 +23,9 @@ We will be using the following applications in the I3 tutorials :
 
 + variety
 
+After some tinkering (choosing icons/themes/cursors) you will have a similar result.
+
+![Screenshots](http://i.imgur.com/CRKtVRV.jpg)
 
 #Prerequisites
 
