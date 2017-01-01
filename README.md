@@ -5,7 +5,7 @@ I3 = [improved tiling windows manager](https://i3wm.org/)
 We start from an up-to-date Linux Mint 18 Cinnamon as described on 
 http://erikdubois.be.
 
-As described here at [this github](https://github.com/erikdubois/Ultimate-Linux-Mint-18-Cinnamon)
+As described here at [this github](https://github.com/erikdubois/Ultimate-Linux-Mint-18-Cinnamon) for Linux Mint 18 Cinnamon or [this github](https://github.com/erikdubois/Ultimate-Linux-Mint-18.1-Cinnamon) for Linux Mint 18.1 Cinnamon.
 
 or described in [this youtube movie](https://www.youtube.com/watch?v=5db66Dt0j4E).
 
