@@ -344,6 +344,10 @@ In the mean time I have a fix for spotify in the config.
 
 # E N D   R E S U L T
 
+Linux Mint 18 and Linux Mint 18.1 images do not differ.
+
+
+![Screenshots](http://i.imgur.com/9o7bZuk.jpg)
 
 
 ![Screenshots](http://i.imgur.com/5RZaVMg.jpg)
