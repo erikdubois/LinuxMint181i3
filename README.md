@@ -15,7 +15,7 @@ Linux Mint 18
 
 ![Screenshots](http://i.imgur.com/QSggN1G.jpg)
 
-Linux Mint 18.1
+Linux Mint 18.1 
 
 ![Screenshots](http://i.imgur.com/mNenIjf.jpg)
 
