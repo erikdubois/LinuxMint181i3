@@ -2,7 +2,7 @@
 
 I3 = [improved tiling windows manager](https://i3wm.org/)
 
-We start from an up-to-date Linux Mint 18 Cinnamon as described on 
+We start from an up-to-date Linux Mint 18.1 Cinnamon as described on 
 http://erikdubois.be.
 
 As described here at [this github](https://github.com/erikdubois/Ultimate-Linux-Mint-18-Cinnamon) for Linux Mint 18 Cinnamon or [this github](https://github.com/erikdubois/Ultimate-Linux-Mint-18.1-Cinnamon) for Linux Mint 18.1 Cinnamon.
@@ -11,7 +11,13 @@ or described in [this youtube movie](https://www.youtube.com/watch?v=5db66Dt0j4E
 
 You will end up with all the needed icons and applications we will use in the I3 tutorials.
 
+Linux Mint 18
+
 ![Screenshots](http://i.imgur.com/QSggN1G.jpg)
+
+Linux Mint 18.1
+
+![Screenshots](http://i.imgur.com/mNenIjf.jpg)
 
 We will be using the following applications in the I3 tutorials :
 
@@ -20,7 +26,7 @@ We will be using the following applications in the I3 tutorials :
 
 #Prerequisites
 
-First install Linux Mint 18 Cinnamon like you always would.
+First install Linux Mint 18.1 Cinnamon like you always would.
 
 Then update.
 
@@ -37,7 +43,7 @@ Get the code from github. Install git first
 
 Then
 
-	git clone https://github.com/erikdubois/i3-on-Linux-Mint-18-Cinnamon.git
+	git clone https://github.com/erikdubois/i3-on-Linux-Mint-18.1-Cinnamon.git
 
 This folder, your are downloading, is all you will need to get I3 working <b>the easy way</b>.
 
