@@ -316,6 +316,7 @@ assign [class="Firefox"]          → 1
 assign [class="sublime-text"]     → 2
 assign [class="sublime_text"]     → 2
 assign [class="Sublime_text"]     → 2
+assign [class="Xed|xed|Brackets"]     → 2
 assign [class="Inkscape"]         → 3
 assign [class="Gimp"]             → 4
 assign [class="vlc"]              → 7
@@ -664,7 +665,7 @@ client.urgent           #4A4A4A #4A4A4A #f7f7f7 #4A4A4A
 # https://github.com/Airblader/i3
 
 for_window [class="^.*"] border pixel 5
-gaps inner 5
+gaps inner 10
 gaps outer 5
 #smart_gaps on
 #smart_borders on
