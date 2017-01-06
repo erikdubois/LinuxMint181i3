@@ -218,6 +218,7 @@ font pango:Noto Mono Regular 13
 #bindsym $mod+Return exec i3-sensible-terminal
 #bindsym $mod+Return exec terminator;focus
 bindsym $mod+Return exec gnome-terminal;focus
+#bindsym $mod+Return exec xfce4-terminal;focus
 
 
 ################### MENU ######################
@@ -321,6 +322,7 @@ assign [class="Inkscape"]         → 3
 assign [class="Gimp"]             → 4
 assign [class="vlc"]              → 7
 assign [class="Nemo"]             → 8
+assign [class="Thunar"]           → 8
 assign [class="Geary"]            → 9
 assign [class="Evolution"]        → 9
 assign [class="Spotify"]          → 10
@@ -353,6 +355,7 @@ exec subl
 exec spotify
 for_window [class="Spotify"] focus
 exec nemo --no-desktop
+#exec thunar
 exec ~/.config/i3/start-conkys.sh
 #exec dunst -config ~/.config/i3/dunstrc
 
@@ -361,6 +364,7 @@ exec ~/.config/i3/start-conkys.sh
 #mod1 = ALT
 
 bindsym $mod+Shift+Return exec nemo --no-desktop; workspace 8;focus
+#bindsym $mod+Shift+Return exec thunar; workspace 8;focus
 bindsym control+mod1+f exec firefox;workspace 1; focus
 bindsym $mod+F1 exec firefox;workspace 1;focus
 bindsym control+mod1+w exec subl;workspace 2;focus
@@ -370,13 +374,16 @@ bindsym $mod+F3 exec inkscape;workspace 3;focus
 bindsym control+mod1+g exec gimp;workspace 4;focus
 bindsym $mod+F4 exec gimp;workspace 4;focus
 bindsym control+mod1+b exec nemo --no-desktop;workspace 8;focus
+#bindsym control+mod1+b exec thunar;workspace 8;focus
 bindsym $mod+F8 exec nemo --no-desktop;workspace 8;focus
+#bindsym $mod+F8 exec thunar;workspace 8;focus
 bindsym control+mod1+e exec evolution;workspace 9;focus
 bindsym $mod+F9 exec evolution;workspace 9;focus
 bindsym control+mod1+s exec spotify;workspace 10;focus
 bindsym $mod+F10 exec spotify;workspace 10;focus
 #bindsym control+mod1+t exec terminator; focus
 bindsym control+mod1+t exec gnome-terminal; focus
+#bindsym control+mod1+t exec xfce4-terminal; focus
 bindsym control+mod1+n exec cinnamon-settings
 
 
