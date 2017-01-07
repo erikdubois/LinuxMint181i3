@@ -199,7 +199,7 @@ bindsym $mod+r mode "resize"
 # from ttf-chromeos-fonts
 # font pango:Cousine 13
 # font pango:Arimo 11
-# font pango:Sans 13 
+# font pango:Sans 13
 # font pango:Noto Mono Regular 13
 # font pango:DroidSansMono 13
 font pango:Noto Mono Regular 13
@@ -220,6 +220,7 @@ font pango:Noto Mono Regular 13
 bindsym $mod+Return exec gnome-terminal;focus
 #bindsym $mod+Return exec mate-terminal;focus
 #bindsym $mod+Return exec xfce4-terminal;focus
+#bindsym $mod+Return exec terminator;focus
 
 
 ################### MENU ######################
@@ -314,20 +315,15 @@ bindsym $mod+Shift+agrave move container to workspace 10
 ################### ASSIGN ######################
 
 
-assign [class="Firefox"]          → 1
-assign [class="sublime-text"]     → 2
-assign [class="sublime_text"]     → 2
-assign [class="Sublime_text"]     → 2
-assign [class="Xed|xed|Brackets"]     → 2
-assign [class="Inkscape"]         → 3
-assign [class="Gimp"]             → 4
-assign [class="vlc"]              → 7
-assign [class="Nemo"]             → 8
-assign [class="Thunar"]           → 8
-assign [class="Caja"]             → 8
-assign [class="Geary"]            → 9
-assign [class="Evolution"]        → 9
-assign [class="Spotify"]          → 10
+assign [class="Firefox"]        					→ 1
+assign [class="sublime-text|sublime_text|Sublime_text"]    		→ 2
+assign [class="Xed|xed|Brackets"] 					→ 2
+assign [class="Inkscape"]         					→ 3
+assign [class="Gimp"]             					→ 4
+assign [class="Vlc|vlc"]          					→ 7
+assign [class="Nemo|Thunar|Caja|nautilus|Nautilus"]			→ 8
+assign [class="Geary|Evolution"]      					→ 9
+assign [class="Spotify"]          					→ 10
 #fix for spotify not moving to workspace 10
 for_window [class="Spotify"] move to workspace 10
 
@@ -357,9 +353,10 @@ exec subl
 exec spotify
 for_window [class="Spotify"] focus
 exec nemo --no-desktop
+#exec nautilus --no-desktop
 #exec caja
 #exec thunar
-exec ~/.config/i3/start-conkys.sh
+#exec ~/.config/i3/start-conkys.sh
 #exec dunst -config ~/.config/i3/dunstrc
 
 
@@ -369,6 +366,7 @@ exec ~/.config/i3/start-conkys.sh
 bindsym $mod+Shift+Return exec nemo --no-desktop; workspace 8;focus
 #bindsym $mod+Shift+Return exec caja; workspace 8;focus
 #bindsym $mod+Shift+Return exec thunar; workspace 8;focus
+#bindsym $mod+Shift+Return exec nautilus --no-desktop; workspace 8;focus
 bindsym control+mod1+f exec firefox;workspace 1; focus
 bindsym $mod+F1 exec firefox;workspace 1;focus
 bindsym control+mod1+w exec subl;workspace 2;focus
@@ -378,9 +376,11 @@ bindsym $mod+F3 exec inkscape;workspace 3;focus
 bindsym control+mod1+g exec gimp;workspace 4;focus
 bindsym $mod+F4 exec gimp;workspace 4;focus
 bindsym control+mod1+b exec nemo --no-desktop;workspace 8;focus
+#bindsym control+mod1+b exec nautilus --no-desktop;workspace 8;focus
 #bindsym control+mod1+b exec caja;workspace 8;focus
 #bindsym control+mod1+b exec thunar;workspace 8;focus
 bindsym $mod+F8 exec nemo --no-desktop;workspace 8;focus
+#bindsym $mod+F8 exec nautilus --no-desktop;workspace 8;focus
 #bindsym $mod+F8 exec caja;workspace 8;focus
 #bindsym $mod+F8 exec thunar;workspace 8;focus
 bindsym control+mod1+e exec evolution;workspace 9;focus
@@ -389,6 +389,7 @@ bindsym control+mod1+s exec spotify;workspace 10;focus
 bindsym $mod+F10 exec spotify;workspace 10;focus
 #bindsym control+mod1+t exec terminator; focus
 bindsym control+mod1+t exec gnome-terminal; focus
+#bindsym control+mod1+t exec terminator; focus
 #bindsym control+mod1+t exec mate-terminal; focus
 #bindsym control+mod1+t exec xfce4-terminal; focus
 bindsym control+mod1+n exec cinnamon-settings
@@ -551,7 +552,7 @@ exec unclutter
 
 bar {
 
-	# type status_command i3status without the config file and 
+    # type status_command i3status without the config file and 
     # you will get the standard i3status bar
     # this is the standard statusbar with my personal settings
 	 status_command i3status -c ~/.config/i3/i3status.conf
