@@ -342,6 +342,8 @@ exec mintupdate-launcher
 #exec volti
 exec pasystray
 exec blueberry-tray
+#Password dialog
+#budgie-polkit-dialog
 
 
 # USER APPLICATIONS
