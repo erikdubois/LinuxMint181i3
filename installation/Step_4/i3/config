@@ -232,8 +232,8 @@ bindsym $mod+d exec dmenu_run -fn 'NotoMonoRegular:bold:pixelsize=18'
 # start alternative menu j4-dmenu based on desktop files in /usr/share/applications
 bindsym $mod+shift+d exec j4-dmenu-desktop --dmenu="dmenu -fn 'DroidSansMono:bold:pixelsize=16' -nb '#fdf6e3' -nf '#586c75' -sf '#fdf6e3' -sb '#FFAF00'"
 
-# start up i3-dmenu-desktop
-#bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+#bindsym $mod+shift+d exec --no-startup-id i3-dmenu-desktop --dmenu="dmenu -fn 'Inconsolata:bold:pixelsize=20S'"
+#bindsym $mod+shift+d exec j4-dmenu-desktop --dmenu="dmenu -fn 'monospace:bold:pixelsize=15'"
 
 
 ################### DUAL SCREEN ######################
@@ -280,6 +280,7 @@ bindsym $mod+exclam workspace 8
 bindsym $mod+ccedilla workspace 9
 bindsym $mod+agrave workspace 10
 
+
 # move focused container to workspace
 bindsym $mod+Shift+ampersand move container to workspace 1
 bindsym $mod+Shift+eacute move container to workspace 2
@@ -314,6 +315,8 @@ bindsym $mod+Shift+agrave move container to workspace 10
 
 ################### ASSIGN ######################
 
+# Assign application to start on a specific workspace
+# you can find the class with the program xprop
 
 assign [class="Firefox"]        					→ 1
 assign [class="sublime-text|sublime_text|Sublime_text"]    		→ 2
@@ -323,7 +326,7 @@ assign [class="Gimp"]             					→ 4
 assign [class="Vlc|vlc"]          					→ 7
 assign [class="Nemo|Thunar|Caja|nautilus|Nautilus"]			→ 8
 assign [class="Geary|Evolution"]      					→ 9
-assign [class="Spotify"]          					→ 10
+assign [class="Spotify|spotify"]       					→ 10
 #fix for spotify not moving to workspace 10
 for_window [class="Spotify"] move to workspace 10
 
@@ -335,16 +338,28 @@ for_window [class="Spotify"] move to workspace 10
 
 # num lock activated
 exec_always --no-startup-id numlockx on
+# network
 exec --no-startup-id nm-applet
-#exec dropbox start
-exec variety
-exec mintupdate-launcher
-#exec volti
+exec network-manager-applet
+# dropbox
+exec dropbox start
+# insync
+exec insync start
+# volume
 exec pasystray
+#exec volumeicon
+exec pasystray
+#variety
+exec variety
+# update
+exec mintupdate-launcher
+# bluetooth
 exec blueberry-tray
-#Password dialog
-#budgie-polkit-dialog
-
+#exec volti
+# clipit
+exec clipit
+#Authentication dialog
+#exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
 # USER APPLICATIONS
 
@@ -389,13 +404,17 @@ bindsym control+mod1+e exec evolution;workspace 9;focus
 bindsym $mod+F9 exec evolution;workspace 9;focus
 bindsym control+mod1+s exec spotify;workspace 10;focus
 bindsym $mod+F10 exec spotify;workspace 10;focus
-#bindsym control+mod1+t exec terminator; focus
+bindsym control+mod1+c exec catfish;focus
+#bindsym control+mod1+t exec terminator;focus
 bindsym control+mod1+t exec gnome-terminal; focus
 #bindsym control+mod1+t exec terminator; focus
 #bindsym control+mod1+t exec mate-terminal; focus
 #bindsym control+mod1+t exec xfce4-terminal; focus
 bindsym control+mod1+n exec cinnamon-settings
-
+bindsym control+mod1+t exec gnome-terminal;focus
+#bindsym control+mod1+Delete exec xfce4-taskmanager;focus
+#bindsym control+Shift+Escape exec xfce4-taskmanager;focus
+#bindsym control+mod1+q exec xfce4-taskmanager;focus
 
 ################### SHORTCUTS WORKSPACES ######################
 
@@ -425,7 +444,7 @@ bindsym Control+Print exec gnome-screenshot -i
 ################### FLOATING OR TILED ######################
 
 
-#floating enabled from some programs
+#floating enabled from some programs - find with xprop
 for_window [class="Gnome-disks"] floating enable
 for_window [class="^Skype$"] floating enable
 for_window [class="^Gnome-font-viewer$"] floating enable
@@ -455,9 +474,13 @@ for_window [title="Moving"] floating enable
 for_window [class="Unetbootin.elf"] floating enable
 for_window [class="Galculator"] floating enable
 for_window [class="Usb-creator-gtk"] floating enable
+for_window [instance="script-fu"] border normal
+for_window [class="Xfce4-taskmanager"] floating enable
+for_window [class="Imagewriter"] floating enable
 for_window [class="MintUpdate.py"] floating enable
 #for_window [class="Bleachbit"] floating enable
 for_window [class="Hexchat"] floating disable
+
 
 #Popups during fullscreen mode
 popup_during_fullscreen smart
@@ -466,7 +489,7 @@ popup_during_fullscreen smart
 ################### VARIETY ######################
 
 
-#Variety keybindings
+#Variety keybindings mod1 = ALT
 # trash wallpaper
 bindsym mod1+t exec variety -t
 # next wallpaper
@@ -533,6 +556,7 @@ bindsym $mod+u border none
 #new_float 1pixel
 
 
+
 ###################       KEYBOARD      ##############################
 
 
@@ -577,6 +601,14 @@ bar {
 	
 	height 25
     workspace_buttons yes
+    # you need to make a link from root to the config file in ~/.config/i3 - see installation folder
+    # ln -s ~/.config/i3/.i3blocks.conf ~/.i3blocks.conf
+    status_command i3blocks
+    #status_command i3status --config ~/.config/i3/i3status 
+    # font pango:DroidSansMono 13
+    font pango:Noto Sans 14
+    #you can change the place via xrandr
+    #output DVI-0
     
     colors {
             background #2F2F2F
@@ -604,6 +636,8 @@ client.urgent           #4A4A4A #4A4A4A #f7f7f7 #4A4A4A
 #################################################################
 ################### BAR APPEARANCE ARCHIVE ######################
 #################################################################
+
+
 
 # Orange background with black text - not focus grey background - white text
 # Windows decoration colors
@@ -636,6 +670,7 @@ client.urgent           #4A4A4A #4A4A4A #f7f7f7 #4A4A4A
 #            inactive_workspace #333333 #222222 #888888
 #            urgent_workspace   #2f343a #900000 #ffffff
 #            }
+
 
 # Alternatives
 # BLue and grey Colors
@@ -679,10 +714,15 @@ client.urgent           #4A4A4A #4A4A4A #f7f7f7 #4A4A4A
 ###################  I 3  G A P S  N E X T   ##############################
 ###########################################################################
 # Settings for I3 next gap git
-# https://github.com/Airblader/i3
+# https://github.com/Airblader/i3/tree/gaps-next
+# Archlinux via aur installation
+# http://dotx.me/snippets-i3-gaps/
+# delete or uncomment the following lines if you do not have it or do not
+# want it
+# packer i3-gaps-next-git --noedit
 
 for_window [class="^.*"] border pixel 5
-gaps inner 10
+gaps inner 10 
 gaps outer 5
 #smart_gaps on
 #smart_borders on
