@@ -62,7 +62,7 @@ numlockx on
 sudo apt-get install -y feh
 
 # change icons,themes and mouse
-sudo apt-get install -y lxappearance
+sudo apt-get install -y lxappearance qt4-qtconfig
 
 # take picture of screen
 sudo apt-get install -y scrot
@@ -83,7 +83,6 @@ sudo apt-get install  -y pasystray paman paprefs pavumeter pulseaudio-module-zer
 
 # dunst is a notification app that you can finetune
 sudo apt-get install -y dunst
-
 
 
 # playerctl for music 
