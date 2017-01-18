@@ -456,11 +456,11 @@ bindsym $mod+Shift+agrave move container to workspace 10
 
 assign [class="Firefox|Vivaldi-stable|Opera"]                                       → 1
 assign [class="sublime-text|sublime_text|Sublime_text|subl|Subl|subl3|Subl3"]       → 2
-assign [class="Xed|xed|Brackets|Atom|Code"] 					    → 2
+assign [class="Xed|xed|Brackets|Atom|Code"]                                         → 2
 assign [class="Inkscape"]                                                           → 3
 assign [class="Gimp"]                                                               → 4
 assign [class="ristretto|Ristretto|shotwell|Shotwell"]                              → 5
-assign [class="Meld"]								    → 5
+assign [class="Meld"]                                                               → 5
 assign [class="feh|gthumb|Gthumb|eog|Eog|Pinta|pixeluvo|Pixeluvo"]                  → 5
 assign [class="Vlc|vlc"]                                                            → 6
 assign [class="Nemo|Thunar|Caja|nautilus|Nautilus"]                                 → 8
@@ -523,10 +523,7 @@ bindsym control+mod1+f exec firefox;workspace 1; focus
 bindsym control+mod1+v exec vivaldi-stable;workspace 1; focus
 
 #workspace 2 related
-bindsym $mod+F2 exec subl3;workspace 2;focus
-#bindsym $mod+F2 exec subl;workspace 2;focus
-#bindsym control+mod1+w exec subl;workspace 2;focus
-bindsym control+mod1+w exec subl3;workspace 2;focus
+#sublime text see distro dependent at bottom
 
 
 #workspace 3 related
@@ -803,7 +800,7 @@ status_command i3blocks -c ~/.config/i3/i3blocks.conf
     # start-conky-i3statusbar.sh is started and conky will follow
     # documentation : https://i3wm.org/docs/user-contributed/conky-i3bar.html
     # conky configuration is in conky-i3statusbar
-	
+        
 #status_command ~/.config/i3/start-conky-i3statusbar.sh
 
    
@@ -998,5 +995,8 @@ exec mintupdate-launcher
 exec blueberry-tray
 #exec --no-startup-id blueman-applet
 
-
+bindsym $mod+F2 exec subl;workspace 2;focus
+bindsym control+mod1+w exec subl;workspace 2;focus
+#bindsym $mod+F2 exec subl3;workspace 2;focus
+#bindsym control+mod1+w exec subl3;workspace 2;focus
 
