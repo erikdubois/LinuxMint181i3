@@ -947,28 +947,6 @@ exec_always compton --config ~/.config/i3/compton.conf
 ################### DISTRO DEPENDENT ######################
 ###########################################################
 
-exec subl
-#exec subl3
-
-#Authentication dialog
-
-#arch budgie
-#exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-
-#Linux Mint
-exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
-
-# update
-exec mintupdate-launcher
-#exec pamac-tray
-
-# bluetooth
-exec blueberry-tray
-#exec --no-startup-id blueman-applet
-
-#settings
-bindsym control+mod1+n exec cinnamon-settings
-#bindsym control+mod1+n exec gnome-control-center
 
 #terminal
 bindsym control+mod1+t exec gnome-terminal; focus
@@ -1004,3 +982,29 @@ bindsym control+mod1+b exec nemo --no-desktop;workspace 8;focus
 #bindsym control+mod1+b exec nautilus --no-desktop;workspace 8;focus
 #bindsym control+mod1+b exec caja;workspace 8;focus
 #bindsym control+mod1+b exec thunar;workspace 8;focus
+
+
+
+exec subl
+#exec subl3
+
+#Authentication dialog
+
+#arch budgie
+#exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+
+#Linux Mint
+exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
+
+# update
+exec mintupdate-launcher
+#exec pamac-tray
+
+# bluetooth
+exec blueberry-tray
+#exec --no-startup-id blueman-applet
+
+#settings
+bindsym control+mod1+n exec cinnamon-settings
+#bindsym control+mod1+n exec gnome-control-center
+
