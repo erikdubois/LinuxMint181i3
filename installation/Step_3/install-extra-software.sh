@@ -80,6 +80,12 @@ sudo apt-get install  -y pasystray paman paprefs pavumeter pulseaudio-module-zer
 # different terminal
 #sudo apt-get install -y terminator
 
+# playerctl for music 
+#https://github.com/acrisci/playerctl/releases
+
+wget https://github.com/acrisci/playerctl/releases/download/v0.5.0/playerctl-0.5.0_amd64.deb -O /tmp/playerctl
+sudo dpkg -i /tmp/playerctl
+
 echo
 echo
 echo "###############################"
