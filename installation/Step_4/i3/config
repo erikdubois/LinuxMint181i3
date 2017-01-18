@@ -345,9 +345,9 @@ font pango:Noto Mono Regular 13
 # gsettings set org.cinnamon.desktop.default-applications.terminal exec /usr/bin/terminator
 # gsettings set org.cinnamon.desktop.default-applications.terminal exec /usr/bin/gnome-terminal
 
+bindsym $mod+Return exec gnome-terminal;focus
 #bindsym $mod+Return exec i3-sensible-terminal;focus
 #bindsym $mod+Return exec terminator;focus
-bindsym $mod+Return exec gnome-terminal;focus
 #bindsym $mod+Return exec mate-terminal;focus
 #bindsym $mod+Return exec xfce4-terminal;focus
 #bindsym $mod+Return exec terminator;focus
@@ -374,8 +374,11 @@ bindsym $mod+shift+d exec j4-dmenu-desktop --dmenu="dmenu -fn 'DroidSansMono:bol
 # xrandr --output DVI-I-2 --right-of DVI-I-1 --auto
 
 # my current setup
-set $firstMonitor LVDS1
-set $secondMonitor LVDS1
+set $firstMonitor DVI-I-1
+set $secondMonitor DVI-I-2
+
+#set $firstMonitor LVDS1
+#set $secondMonitor LVDS1
 
 #set $firstMonitor DVI-I-2
 #set $secondMonitor VGA-0
