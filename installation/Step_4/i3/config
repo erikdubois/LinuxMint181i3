@@ -512,28 +512,6 @@ for_window [class="Nemo"] focus
 #exec --no-startup-id evolution
 #exec --no-startup-id conky
 
-###########################################################
-################### DISTRO DEPENDENT ######################
-###########################################################
-
-exec subl
-#exec subl3
-
-#Authentication dialog
-# polkit-gnome
-#arch budgie
-#exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-#exec --no-startup-id /usr/lib/polkit-1/polkit-agent-helper-1 &
-#Linux Mint
-exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
-
-# update
-exec mintupdate-launcher
-#exec pamac-tray
-# bluetooth
-exec blueberry-tray
-#exec --no-startup-id blueman-applet
-
 
 
 ################### SHORTCUTS APPLICATIONS ######################
@@ -995,5 +973,30 @@ mode "$mode_gaps_outer" {
 ###########################################################################
 #if you want transparency on non-focused windows
 exec_always compton --config ~/.config/i3/compton.conf
+
+
+
+###########################################################
+################### DISTRO DEPENDENT ######################
+###########################################################
+
+exec subl
+#exec subl3
+
+#Authentication dialog
+# polkit-gnome
+#arch budgie
+#exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+#exec --no-startup-id /usr/lib/polkit-1/polkit-agent-helper-1 &
+#Linux Mint
+exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
+
+# update
+exec mintupdate-launcher
+#exec pamac-tray
+# bluetooth
+exec blueberry-tray
+#exec --no-startup-id blueman-applet
+
 
 
