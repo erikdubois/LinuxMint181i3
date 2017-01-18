@@ -80,12 +80,35 @@ sudo apt-get install  -y pasystray paman paprefs pavumeter pulseaudio-module-zer
 # different terminal
 #sudo apt-get install -y terminator
 
+
+# dunst is a notification app that you can finetune
+sudo apt-get install -y dunst
+
+
+
 # playerctl for music 
 #https://github.com/acrisci/playerctl/releases
+    if hash playerctl 2>/dev/null; then
+    	echo "playerctl already installed"
+    else
+        wget https://github.com/acrisci/playerctl/releases/download/v0.5.0/playerctl-0.5.0_amd64.deb -O /tmp/playerctl
+		sudo dpkg -i /tmp/playerctl
+    fi 
 
-wget https://github.com/acrisci/playerctl/releases/download/v0.5.0/playerctl-0.5.0_amd64.deb -O /tmp/playerctl
-sudo dpkg -i /tmp/playerctl
 
+#https://github.com/vivien/i3blocks
+if hash i3blocks 2>/dev/null; then
+    	echo "i3blocks is already installed"
+else
+
+	rm -rf /tmp/i3blocks
+	git clone https://github.com/vivien/i3blocks.git /tmp/i3blocks
+	cd /tmp/i3blocks
+	make clean all
+	sudo make install
+	rm -rf /tmp/i3blocks
+
+fi
 echo
 echo
 echo "###############################"
