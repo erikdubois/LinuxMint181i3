@@ -333,7 +333,7 @@ bindsym $mod+r mode "resize"
 # from ttf-chromeos-fonts
 # font pango:Cousine 13
 # font pango:Arimo 11
-# font pango:Sans 13 
+# font pango:Sans 13
 # font pango:Noto Mono Regular 13
 # font pango:DroidSansMono 13
 font pango:Noto Mono Regular 13
@@ -348,6 +348,10 @@ font pango:Noto Mono Regular 13
 #bindsym $mod+Return exec i3-sensible-terminal;focus
 #bindsym $mod+Return exec terminator;focus
 bindsym $mod+Return exec gnome-terminal;focus
+#bindsym $mod+Return exec mate-terminal;focus
+#bindsym $mod+Return exec xfce4-terminal;focus
+#bindsym $mod+Return exec terminator;focus
+
 
 ################### MENU ######################
 
@@ -439,18 +443,18 @@ bindsym $mod+Shift+agrave move container to workspace 10
 
 ################### ASSIGN ######################
 
+# Assign application to start on a specific workspace
+# you can find the class with the program xprop
 
-assign [class="Firefox"]          → 1
-assign [class="sublime-text"]     → 2
-assign [class="sublime_text"]     → 2
-assign [class="Sublime_text"]     → 2
-assign [class="Inkscape"]         → 3
-assign [class="Gimp"]             → 4
-assign [class="vlc"]              → 7
-assign [class="Nemo"]             → 8
-assign [class="Geary"]            → 9
-assign [class="Evolution"]        → 9
-assign [class="Spotify"]          → 10
+assign [class="Firefox"]        					→ 1
+assign [class="sublime-text|sublime_text|Sublime_text"]    		→ 2
+assign [class="Xed|xed|Brackets"] 					→ 2
+assign [class="Inkscape"]         					→ 3
+assign [class="Gimp"]             					→ 4
+assign [class="Vlc|vlc"]          					→ 7
+assign [class="Nemo|Thunar|Caja|nautilus|Nautilus"]			→ 8
+assign [class="Geary|Evolution"]      					→ 9
+assign [class="Spotify|spotify"]       					→ 10
 #fix for spotify not moving to workspace 10
 for_window [class="Spotify"] move to workspace 10
 
@@ -462,14 +466,27 @@ for_window [class="Spotify"] move to workspace 10
 
 # num lock activated
 exec_always --no-startup-id numlockx on
+# network
 exec --no-startup-id nm-applet
-#exec dropbox start
-exec variety
-exec mintupdate-launcher
-#exec volti
+exec network-manager-applet
+# dropbox
+exec dropbox start
+# insync
+exec insync start
+# volume
 exec pasystray
+#exec volti
+#exec volumeicon
+#variety
+exec variety
+# update
+exec mintupdate-launcher
+# bluetooth
 exec blueberry-tray
-
+# clipit
+exec clipit
+#Authentication dialog
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
 # USER APPLICATIONS
 
@@ -480,6 +497,9 @@ exec subl
 #exec spotify
 for_window [class="Spotify"] focus
 exec nemo --no-desktop
+#exec nautilus --no-desktop
+#exec caja
+#exec thunar
 #exec ~/.config/i3/start-conkys.sh
 #exec dunst -config ~/.config/i3/dunstrc
 
@@ -488,6 +508,9 @@ exec nemo --no-desktop
 #mod1 = ALT
 
 bindsym $mod+Shift+Return exec nemo --no-desktop; workspace 8;focus
+#bindsym $mod+Shift+Return exec caja; workspace 8;focus
+#bindsym $mod+Shift+Return exec thunar; workspace 8;focus
+#bindsym $mod+Shift+Return exec nautilus --no-desktop; workspace 8;focus
 bindsym control+mod1+f exec firefox;workspace 1; focus
 bindsym $mod+F1 exec firefox;workspace 1;focus
 bindsym control+mod1+w exec subl;workspace 2;focus
@@ -497,15 +520,28 @@ bindsym $mod+F3 exec inkscape;workspace 3;focus
 bindsym control+mod1+g exec gimp;workspace 4;focus
 bindsym $mod+F4 exec gimp;workspace 4;focus
 bindsym control+mod1+b exec nemo --no-desktop;workspace 8;focus
+#bindsym control+mod1+b exec nautilus --no-desktop;workspace 8;focus
+#bindsym control+mod1+b exec caja;workspace 8;focus
+#bindsym control+mod1+b exec thunar;workspace 8;focus
 bindsym $mod+F8 exec nemo --no-desktop;workspace 8;focus
+#bindsym $mod+F8 exec nautilus --no-desktop;workspace 8;focus
+#bindsym $mod+F8 exec caja;workspace 8;focus
+#bindsym $mod+F8 exec thunar;workspace 8;focus
 bindsym control+mod1+e exec evolution;workspace 9;focus
 bindsym $mod+F9 exec evolution;workspace 9;focus
 bindsym control+mod1+s exec spotify;workspace 10;focus
 bindsym $mod+F10 exec spotify;workspace 10;focus
-#bindsym control+mod1+t exec terminator; focus
+bindsym control+mod1+c exec catfish;focus
+#bindsym control+mod1+t exec terminator;focus
 bindsym control+mod1+t exec gnome-terminal; focus
+#bindsym control+mod1+t exec terminator; focus
+#bindsym control+mod1+t exec mate-terminal; focus
+#bindsym control+mod1+t exec xfce4-terminal; focus
 bindsym control+mod1+n exec cinnamon-settings
-
+bindsym control+Shift+Escape exec gnome-system-monitor;focus
+#bindsym control+mod1+Delete exec xfce4-taskmanager;focus
+#bindsym control+Shift+Escape exec xfce4-taskmanager;focus
+#bindsym control+mod1+q exec xfce4-taskmanager;focus
 
 ################### SHORTCUTS WORKSPACES ######################
 
@@ -535,7 +571,7 @@ bindsym Control+Print exec gnome-screenshot -i
 ################### FLOATING OR TILED ######################
 
 
-#floating enabled from some programs
+#floating enabled from some programs - find with xprop
 for_window [class="Gnome-disks"] floating enable
 for_window [class="^Skype$"] floating enable
 for_window [class="^Gnome-font-viewer$"] floating enable
@@ -565,6 +601,9 @@ for_window [title="Moving"] floating enable
 for_window [class="Unetbootin.elf"] floating enable
 for_window [class="Galculator"] floating enable
 for_window [class="Usb-creator-gtk"] floating enable
+for_window [instance="script-fu"] border normal
+for_window [class="Xfce4-taskmanager"] floating enable
+for_window [class="Imagewriter"] floating enable
 for_window [class="MintUpdate.py"] floating enable
 #for_window [class="Bleachbit"] floating enable
 for_window [class="Hexchat"] floating disable
@@ -576,7 +615,7 @@ popup_during_fullscreen smart
 ################### VARIETY ######################
 
 
-#Variety keybindings
+#Variety keybindings mod1 = ALT
 # trash wallpaper
 bindsym mod1+t exec variety -t
 # next wallpaper
@@ -630,7 +669,7 @@ bindsym $mod+b bar mode toggle
 
 
 # Border control
-# hide_edge_borders both
+hide_edge_borders both
 bindsym $mod+shift+b exec i3-msg border toggle
 
 #changing border style
@@ -669,7 +708,7 @@ exec unclutter
 
 bar {
 
-	# type status_command i3status without the config file and 
+    # type status_command i3status without the config file and 
     # you will get the standard i3status bar
     # this is the standard statusbar with my personal settings
 	 status_command i3status -c ~/.config/i3/i3status.conf
@@ -689,9 +728,16 @@ bar {
     # conky configuration is in conky-i3statusbar
 	# status_command ~/.config/i3/start-conky-i3statusbar.sh
 
-	
 	height 25
     workspace_buttons yes
+    # you need to make a link from root to the config file in ~/.config/i3 - see installation folder
+    # ln -s ~/.config/i3/.i3blocks.conf ~/.i3blocks.conf
+    #status_command i3blocks
+    #status_command i3status --config ~/.config/i3/i3status 
+    # font pango:DroidSansMono 13
+    font pango:Noto Sans 14
+    #you can change the place via xrandr
+    #output DVI-0
     
     colors {
             background #2F2F2F
@@ -794,7 +840,12 @@ client.urgent           #4A4A4A #4A4A4A #f7f7f7 #4A4A4A
 ###################  I 3  G A P S  N E X T   ##############################
 ###########################################################################
 # Settings for I3 next gap git
-# https://github.com/Airblader/i3
+# https://github.com/Airblader/i3/tree/gaps-next
+# Archlinux via aur installation
+# http://dotx.me/snippets-i3-gaps/
+# delete or uncomment the following lines if you do not have it or do not
+# want it
+# packer i3-gaps-next-git --noedit
 
 for_window [class="^.*"] border pixel 5
 gaps inner 5
