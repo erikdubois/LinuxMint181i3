@@ -620,10 +620,16 @@ popup_during_fullscreen smart
 bindsym mod1+t exec variety -t
 # next wallpaper
 bindsym mod1+n exec variety -n
+bindsym mod1+Right exec variety -n
 # previous wallpaper
 bindsym mod1+p exec variety -p
+bindsym mod1+Left exec variety -p
 # favorite wallpaper
 bindsym mod1+f exec variety -f
+# pause wallpaper
+bindsym mod1+Up exec variety --pause
+# resume wallpaper
+bindsym mod1+Down exec variety --resume
 
 
 ################### MODE_SYSTEM ######################
