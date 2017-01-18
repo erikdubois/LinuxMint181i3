@@ -80,7 +80,6 @@ sudo apt-get install  -y pasystray paman paprefs pavumeter pulseaudio-module-zer
 # different terminal
 #sudo apt-get install -y terminator
 
-
 # dunst is a notification app that you can finetune
 sudo apt-get install -y dunst
 

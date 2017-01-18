@@ -76,8 +76,8 @@ conky.text = [[
       "separator_block_width": 0
     },
     {
-      #"full_text": "  ${texeci 1800 sleep 5; aptitude search '~U' | wc -l} updates ",
-      "full_text": "  ${texeci 1800 sleep 5; checkupdates | wc -l}+${texeci 1800 sleep 5; packer --quickcheck | wc -l} updates",
+      "full_text": "  ${texeci 1800 sleep 5; aptitude search '~U' | wc -l} updates ",
+      #"full_text": "  ${texeci 1800 sleep 5; checkupdates | wc -l}+${texeci 1800 sleep 5; packer --quickcheck | wc -l} updates",
       "color": "\#fdf6e3",
       "background": "\#2aa198",
       "separator": true,
@@ -98,7 +98,10 @@ conky.text = [[
       "separator_block_width": 0
     },
     {
-      "full_text": "  ${exec amixer get Master | grep % | awk '{print $5}' | sed 's/[^0-9\%]//g' | head -n1} ",
+      #linux mint
+      "full_text": "  ${exec amixer get Master | grep % | awk '{print $4}' | sed 's/[^0-9\%]//g' | head -n1} ",
+      #arch linux
+      #"full_text": "  ${exec amixer get Master | grep % | awk '{print $5}' | sed 's/[^0-9\%]//g' | head -n1} ",
       "color": "\#fdf6e3",
       "background": "\#859900",
       "separator": true,
