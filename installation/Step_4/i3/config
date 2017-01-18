@@ -687,12 +687,12 @@ bindsym $mod+Pause mode "$mode_system"
 
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
 mode "$mode_system" {
-    bindsym l exec --no-startup-id ~/.config/i3/i3exit.sh lock, mode "default"
-    bindsym e exec --no-startup-id ~/.config/i3/i3exit.sh logout, mode "default"
-    bindsym s exec --no-startup-id ~/.config/i3/i3exit.sh suspend, mode "default"
-    bindsym h exec --no-startup-id ~/.config/i3/i3exit.sh hibernate, mode "default"
-    bindsym r exec --no-startup-id ~/.config/i3/i3exit.sh reboot, mode "default"
-    bindsym Shift+s exec --no-startup-id ~/.config/i3/i3exit.sh shutdown, mode "default"
+    bindsym l exec --no-startup-id ~/.config/i3/scripts/i3exit.sh lock, mode "default"
+    bindsym e exec --no-startup-id ~/.config/i3/scripts/i3exit.sh logout, mode "default"
+    bindsym s exec --no-startup-id ~/.config/i3/scripts/i3exit.sh suspend, mode "default"
+    bindsym h exec --no-startup-id ~/.config/i3/scripts/i3exit.sh hibernate, mode "default"
+    bindsym r exec --no-startup-id ~/.config/i3/scripts/i3exit.sh reboot, mode "default"
+    bindsym Shift+s exec --no-startup-id ~/.config/i3/scripts/i3exit.sh shutdown, mode "default"
 
     # back to normal: Enter or Escape
     bindsym Return mode "default"
