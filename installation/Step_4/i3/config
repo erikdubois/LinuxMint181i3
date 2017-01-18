@@ -970,11 +970,6 @@ exec blueberry-tray
 bindsym control+mod1+n exec cinnamon-settings
 #bindsym control+mod1+n exec gnome-control-center
 
-#bindsym $mod+F2 exec subl;workspace 2;focus
-#bindsym control+mod1+w exec subl;workspace 2;focus
-bindsym $mod+F2 exec subl3;workspace 2;focus
-bindsym control+mod1+w exec subl3;workspace 2;focus
-
 #terminal
 bindsym control+mod1+t exec gnome-terminal; focus
 #bindsym control+mod1+t exec terminator;focus
