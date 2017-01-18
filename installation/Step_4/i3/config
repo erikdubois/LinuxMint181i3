@@ -523,8 +523,7 @@ bindsym control+mod1+f exec firefox;workspace 1; focus
 bindsym control+mod1+v exec vivaldi-stable;workspace 1; focus
 
 #workspace 2 related
-#sublime text see distro dependent at bottom
-
+#sublime text see at bottom distro dependent
 
 #workspace 3 related
 bindsym $mod+F3 exec inkscape;workspace 3;focus
@@ -544,20 +543,7 @@ bindsym $mod+F6 exec vlc;workspace 6;focus
 #workspace 7 related
 
 #workspace 8 related
-bindsym $mod+F8 exec nemo --no-desktop;workspace 8;focus
-#bindsym $mod+F8 exec nautilus --no-desktop;workspace 8;focus
-#bindsym $mod+F8 exec caja;workspace 8;focus
-#bindsym $mod+F8 exec thunar;workspace 8;focus
-
-bindsym $mod+Shift+Return exec nemo --no-desktop; workspace 8;focus
-#bindsym $mod+Shift+Return exec caja; workspace 8;focus
-#bindsym $mod+Shift+Return exec thunar; workspace 8;focus
-#bindsym $mod+Shift+Return exec nautilus --no-desktop; workspace 8;focus
-
-bindsym control+mod1+b exec nemo --no-desktop;workspace 8;focus
-#bindsym control+mod1+b exec nautilus --no-desktop;workspace 8;focus
-#bindsym control+mod1+b exec caja;workspace 8;focus
-#bindsym control+mod1+b exec thunar;workspace 8;focus
+# filemanagers see at bottom distro dependent
 
 #workspace 9 related
 bindsym $mod+F9 exec evolution;workspace 9;focus
@@ -571,22 +557,6 @@ bindsym control+mod1+s exec spotify;workspace 10;focus
 
 #catfish
 bindsym control+mod1+c exec catfish;focus
-
-#terminal
-bindsym control+mod1+t exec gnome-terminal; focus
-#bindsym control+mod1+t exec terminator;focus
-#bindsym control+mod1+t exec mate-terminal; focus
-#bindsym control+mod1+t exec xfce4-terminal; focus
-
-#settings
-#bindsym control+mod1+n exec cinnamon-settings
-bindsym control+mod1+n exec gnome-control-center
-
-#System monitor
-bindsym control+Shift+Escape exec gnome-system-monitor;focus
-#bindsym control+Shift+Escape exec xfce4-taskmanager;focus
-#bindsym control+Shift+Escape exec xfce4-taskmanager;focus
-#bindsym control+Shift+Escape exec xfce4-taskmanager;focus
 
 ################### SHORTCUTS WORKSPACES ######################
 
@@ -981,22 +951,61 @@ exec subl
 #exec subl3
 
 #Authentication dialog
-# polkit-gnome
+
 #arch budgie
 #exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-#exec --no-startup-id /usr/lib/polkit-1/polkit-agent-helper-1 &
+
 #Linux Mint
 exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 
 # update
 exec mintupdate-launcher
 #exec pamac-tray
+
 # bluetooth
 exec blueberry-tray
 #exec --no-startup-id blueman-applet
 
+#settings
+bindsym control+mod1+n exec cinnamon-settings
+#bindsym control+mod1+n exec gnome-control-center
+
+#bindsym $mod+F2 exec subl;workspace 2;focus
+#bindsym control+mod1+w exec subl;workspace 2;focus
+bindsym $mod+F2 exec subl3;workspace 2;focus
+bindsym control+mod1+w exec subl3;workspace 2;focus
+
+#terminal
+bindsym control+mod1+t exec gnome-terminal; focus
+#bindsym control+mod1+t exec terminator;focus
+#bindsym control+mod1+t exec mate-terminal; focus
+#bindsym control+mod1+t exec xfce4-terminal; focus
+
+#System monitor
+bindsym control+Shift+Escape exec gnome-system-monitor;focus
+#bindsym control+Shift+Escape exec xfce4-taskmanager;focus
+#bindsym control+Shift+Escape exec xfce4-taskmanager;focus
+#bindsym control+Shift+Escape exec xfce4-taskmanager;focus
+
+
+#workspace 2 related
 bindsym $mod+F2 exec subl;workspace 2;focus
 bindsym control+mod1+w exec subl;workspace 2;focus
 #bindsym $mod+F2 exec subl3;workspace 2;focus
 #bindsym control+mod1+w exec subl3;workspace 2;focus
 
+#workspace 8 related
+bindsym $mod+F8 exec nemo --no-desktop;workspace 8;focus
+#bindsym $mod+F8 exec nautilus --no-desktop;workspace 8;focus
+#bindsym $mod+F8 exec caja;workspace 8;focus
+#bindsym $mod+F8 exec thunar;workspace 8;focus
+
+bindsym $mod+Shift+Return exec nemo --no-desktop; workspace 8;focus
+#bindsym $mod+Shift+Return exec caja; workspace 8;focus
+#bindsym $mod+Shift+Return exec thunar; workspace 8;focus
+#bindsym $mod+Shift+Return exec nautilus --no-desktop; workspace 8;focus
+
+bindsym control+mod1+b exec nemo --no-desktop;workspace 8;focus
+#bindsym control+mod1+b exec nautilus --no-desktop;workspace 8;focus
+#bindsym control+mod1+b exec caja;workspace 8;focus
+#bindsym control+mod1+b exec thunar;workspace 8;focus
