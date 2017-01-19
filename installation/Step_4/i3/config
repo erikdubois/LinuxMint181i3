@@ -418,16 +418,16 @@ bindsym $mod+ccedilla workspace 9
 bindsym $mod+agrave workspace 10
 
 # move focused container to workspace
-bindsym $mod+Shift+ampersand move container to workspace 1
-bindsym $mod+Shift+eacute move container to workspace 2
-bindsym $mod+Shift+quotedbl move container to workspace 3
-bindsym $mod+Shift+apostrophe move container to workspace 4
-bindsym $mod+Shift+5 move container to workspace 5
-bindsym $mod+Shift+section move container to workspace 6
-bindsym $mod+Shift+egrave move container to workspace 7
-bindsym $mod+Shift+exclam move container to workspace 8
-bindsym $mod+Shift+ccedilla move container to workspace 9
-bindsym $mod+Shift+agrave move container to workspace 10
+bindsym $mod+Shift+ampersand move container to workspace 1; workspace 1
+bindsym $mod+Shift+eacute move container to workspace 2; workspace 2
+bindsym $mod+Shift+quotedbl move container to workspace 3; workspace 3
+bindsym $mod+Shift+apostrophe move container to workspace 4; workspace 4
+bindsym $mod+Shift+5 move container to workspace 5; workspace 5
+bindsym $mod+Shift+section move container to workspace 6; workspace 6
+bindsym $mod+Shift+egrave move container to workspace 7; workspace 7
+bindsym $mod+Shift+exclam move container to workspace 8; workspace 8
+bindsym $mod+Shift+ccedilla move container to workspace 9; workspace 9
+bindsym $mod+Shift+agrave move container to workspace 10; workspace 10
 
 
 ################### MOUSE ######################
@@ -579,8 +579,10 @@ for_window [urgent=latest] focus
 
 
 bindsym Print exec scrot '%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f ~/Pictures/'
+#bindsym Print exec scrot '%Y-%m-%d-%H-%M-%S.jpg' -e 'mv $f ~/Pictures/' && sleep 1 && exec notify-send 'screenshot has been saved in ~/Pictures'
 bindsym Control+Print exec gnome-screenshot -i
-
+#bindsym shift+Print exec shutter
+#bindsym control+Print exec xfce4-screenshooter
 
 
 ################### FLOATING OR TILED ######################
