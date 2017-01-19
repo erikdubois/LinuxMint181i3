@@ -48,7 +48,7 @@ Then
 
 	git clone https://github.com/erikdubois/i3-on-Linux-Mint-18.1-Cinnamon.git
 
-This folder, your are downloading, is all you will need to get I3 working <b>the easy way</b>.
+This folder, you are downloading, is all you will need to get I3 working <b>the easy way</b>.
 
 ##Contents of the github
 
