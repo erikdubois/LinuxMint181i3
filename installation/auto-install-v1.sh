@@ -43,33 +43,4 @@ cd Step_3
 
 sh install-extra-software.sh
 
-cd ..
-
-cd Step_4
-
-mkdir ~/.config/i3
-
-cp -avr i3 ~/.config
-
-cd ..
-
-cd Step_5
-
-cd ..
-
-cd Step_6
-
-cd ..
-
-
-cd Step_8
-
-cd ..
-
-cd Step_9
-
-cd ..
-
-cd Step_10
-
-cd ..
+echo "DONE!"

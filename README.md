@@ -54,7 +54,7 @@ This folder, your are downloading, is all you will need to get I3 working <b>the
 
 Folder <b>Installation</b> is the sequence of the installation procedure you can follow till the last one or not.
 
-Folder <b>I3</b> are all the settings to get a working I3 and it is in the folder Step 4.
+Folder for your <b>I3</b> installation is the top level of the github. Config file is THE document you need to get a working i3wm.
 
 
 
@@ -132,36 +132,32 @@ When you install i3 it will make an hidden folder in this location, once you log
 
 You have to copy/paste the content of the i3 folder into <b>~/.config/i3</b>.
 
-You have to make this folder yourself. It is normal that you do not have it.
+You have to make this folder yourself IF you skipped step 1. It is normal that you do not have it since you never logged in with I3 yet.
 
-You never logged in with I3.
-
-<b>Beware the hidden files !! Copy/paste all files (CTRL + H)</b>
- 
- At this point we have no hidden files but there might be more in the future.
 
 Some explanations
 
 + config is the most important file - here all the settings of I3 that can be changed
-+ i3status.conf is the configuration file for you bottom panel that can be changed
++ i3status.conf is the standard bar configuration file for you bottom panel that can be changed
++ start-conky-i3statusbar.sh is the the application that will start next line
++ conky-i3statusbar - alternative bar made with conky
++ i3blocks.conf - alternative bar with scripts from i3blocks
 + i3exit.sh is used to logoff, exit, reboot etc - no need to change this
-+ compton.conf is telling the system to dim the windows that have no focus that can be changed
++ compton.conf is taking care of the windows (shadow, transparency, ...)
 + start-conkys.sh will start the two conky's present 
-+ system-overview conky will show process and memory
-+ system-shortcuts conky will help you with the shortcuts
++ conky system-overview conky will show process and memory
++ conky system-shortcuts conky will help you with the shortcuts
 
 
-# Step 5
 
 ## Change the looks
 
 Use <b>lxappearance</b> to change icons, themes etc  ...
 Restart programs to see the changes.
 
+Settings of icons, themes and fonts are kept in several files depending which gtk version the application uses.
 
-In this folder you will find two files. If you have issues changing the icons etc you can check out my settings of these files
-
-This file should be in your home directory as a hidden file. Compare or copy/paste.
+This file should be in your home directory as a hidden file.
 
 	.gtkrc-2.0
 
@@ -169,20 +165,14 @@ The other file is a bit deeper in the folder structure.
 
 	~/.config/gtk-3.0/settings.ini
 
-Compare your settings or copy/paste to this location.
 
 
-# Step 6
+# Conky
 
-If you want the conky's to work you will have to run the installation script for the software.
+You installed the software for conky in Step_3
 
-	install-conky-software.sh
+If you want to have a status bar based on a conky, you can now choose to have it in the options in the config file.
 
-If you want to have a status bar based on a conky (step 10) you will need this too.
-
-# Step 7
-
-Nothing yet to share in the folder step 7.
 
 ## I3 is MADE for DUAL and more SCREENS
 
@@ -201,25 +191,9 @@ Use this code in your config or terminal (only once) to tell the system which mo
 
 	xrandr --output DVI-I-2 --right-of DVI-I-1 --auto
 
+There is also an more 'gui' approach if you install arandr.
 
-
-
-# Step 8
-
-Not necessary to do.
-
-The terminal is a place you will be working a lot. I have terminator as terminal. In all distro's it is available and it provides transparency of the background so we can look at the wallpaper provided by variety.
-
-These are my settings. Put them in this folder. Compare or copy/paste.
-
-	~/.config/terminator/config
-
-
-# Step 9
-
-These are all my config files or settings of a wide variety of applications.
-
-Not necessary to do.
+    sudo apt install arandr
 
 
 # Extra info
@@ -268,23 +242,18 @@ Mod + SHIFT + Q = end current program (move mouse over it)
 Remember the 10 possible screens in the bottom-left corner.
 I have positioned some programs on some specific desktops.
 
-assign [class="Firefox"]          → 1
-
-assign [class="sublime-text"]     → 2
-
-assign [class="sublime_text"]     → 2
-
-assign [class="Sublime_text"]     → 2
-
-assign [class="Vlc"]              → 7
-
-assign [class="Nemo"]             → 8
-
-assign [class="Geary"]            → 9
-
-assign [class="Evolution"]        → 9
-
-assign [class="Spotify"]          → 10
+assign [class="Firefox|Vivaldi-stable|Opera"]                                       → 1
+assign [class="sublime-text|sublime_text|Sublime_text|subl|Subl|subl3|Subl3"]       → 2
+assign [class="Xed|xed|Brackets|Atom|Code"]                                         → 2
+assign [class="Inkscape"]                                                           → 3
+assign [class="Gimp"]                                                               → 4
+assign [class="ristretto|Ristretto|shotwell|Shotwell"]                              → 5
+assign [class="Meld"]                                                               → 5
+assign [class="feh|gthumb|Gthumb|eog|Eog|Pinta|pixeluvo|Pixeluvo"]                  → 5
+assign [class="Vlc|vlc"]                                                            → 6
+assign [class="Nemo|Thunar|Caja|nautilus|Nautilus"]                                 → 8
+assign [class="Geary|Evolution"]                                                    → 9
+assign [class="Spotify|spotify"]                                                    → 10
 
 Tip : if you use sublime-text. It gives us 'nag screens' to buy it. They will pop up in workspace 2 because of my setting. 
 
@@ -302,13 +271,15 @@ So CTRL + ALT + f will start firefox. Change the shortcuts if you do not like th
 
 	bindsym control+Mod1+f exec firefox 
 
-	bindsym control+Mod1+g exec geary
+    bindsym control+Mod1+w exec sublime-text 
+
+	bindsym control+Mod1+g exec gimp
 
 	bindsym control+Mod1+e exec evolution
 
 	bindsym control+Mod1+s exec spotify
 
-	bindsym control+Mod1+t exec subl
+	bindsym control+Mod1+t exec gnome-terminal
 
 	bindsym control+Mod1+b exec nemo --no-desktop
 
@@ -329,17 +300,8 @@ I am set to autologin. It will remember your preferences to log in next time.
 Firefox will start on workspace 1.
 Sublime Text will start on workspace 2.
 Nemo will start on workspace 8.
+Spotify will start on workspace 10.
 
-Spotify will start on any workspace... 
-There is a bug/issue we have to live with. Put your mouse on top of spotify and press
-	
-	mod (i.e.windows or super) and SHIFT and 0 to move it to window 10 for example
-
-
-In the mean time I have a fix for spotify in the config.
-
-	#fix for spotify not moving to workspace 10
-	for_window [class="Spotify"] move to workspace 10
 
 
 # E N D   R E S U L T

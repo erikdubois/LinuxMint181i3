@@ -54,6 +54,9 @@
 #
 ##################################################################################################################
 
+# conky
+sudo apt-get install -y conky-all
+
 # numerick lock on
 sudo apt-get install -y numlockx
 numlockx on
@@ -79,9 +82,6 @@ sudo apt-get install  -y pasystray paman paprefs pavumeter pulseaudio-module-zer
 
 # different terminal
 #sudo apt-get install -y terminator
-
-# dunst is a notification app that you can finetune
-sudo apt-get install -y dunst
 
 
 # playerctl for music 

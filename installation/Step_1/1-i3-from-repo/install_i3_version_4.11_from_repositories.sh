@@ -66,6 +66,12 @@ sudo apt-get install -y i3 i3lock i3status i3-wm
 sudo apt-get install dmenu
 # you will install suckless-tools instead
 
+
+# create hidden i3 folder
+
+# if there is no hidden folder then make one
+[ -d $HOME"/.config/i3" ] || mkdir -p $HOME"/.config/i3"
+
 echo
 echo
 echo "###############################"
