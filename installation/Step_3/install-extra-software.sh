@@ -73,6 +73,10 @@ sudo apt-get install -y scrot
 # transparency of non active window
 sudo apt-get install -y compton
 
+# notify demon
+sudo apt-get install -y notify-osd
+
+
 # get the mouse out of the way
 sudo apt-get install -y unclutter
 
