@@ -122,6 +122,7 @@ You will install
 - terminator - different terminal you can fine-tune in look
 
 
+Double click the awesome font to install it. You will need it for the conkybar in the config file.
 
 
 # Step 4
@@ -199,6 +200,8 @@ There is also an more 'gui' approach if you install arandr.
 # Extra info
 
 ## Nitrogen
+
+Use variety. It will provide with awesome images from desktoppr. But if you run into problem you can use this application.
 
 You can set your wallpaper with nitrogen also if variety (or feh) does not prove to work.
 
