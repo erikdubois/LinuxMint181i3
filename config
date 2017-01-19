@@ -751,7 +751,7 @@ bar {
     # this is the standard statusbar with my personal settings
 
 #status_command i3status
-#status_command i3status -c ~/.config/i3/i3status.conf
+status_command i3status -c ~/.config/i3/i3status.conf
 
 
 # OPTION 2 : i3blocks
@@ -773,7 +773,7 @@ bar {
     # documentation : https://i3wm.org/docs/user-contributed/conky-i3bar.html
     # conky configuration is in conky-i3statusbar
         
-status_command ~/.config/i3/start-conky-i3statusbar.sh
+#status_command ~/.config/i3/start-conky-i3statusbar.sh
 
    
 colors {
