@@ -78,17 +78,17 @@ First we will get I3 from the Linux Mint Repositories (version 4.11) by running 
 
 Install first the dependencies.
 
-	0_install_dependencies_for_both_scripts.sh
+	0_install_dependencies_for_both_scripts-vx.sh
 
 
 Then we need to run a script to install a xcb-util-xrm. This package is not yet included in the repositories at mid january 2017. So we compile it ourselves. In the future this can be done easier if it is in the repo's.
 
-	1_install_xcb-util-xrm.sh
+	1_install_xcb-util-xrm-vx.sh
 
 
 Next we will run a script to get I3 and its dependancies (version 4.12) with the possibility to have [gaps between the windows](https://github.com/Airblader/i3) by running
 
-	2_install_i3_gaps_next.sh
+	2_install_i3_gaps_next-vx.sh
 
 The added advantage is that we will have the <b>latest version of I3</b> as you can see on the [website](https://i3wm.org/).
 
