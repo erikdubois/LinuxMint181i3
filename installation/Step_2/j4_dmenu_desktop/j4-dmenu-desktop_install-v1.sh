@@ -62,3 +62,10 @@ sudo apt-get install cmake -y
 cmake . &&  make  &&  sudo make install
 cd ..
 rm -rf j4-dmenu-desktop
+
+echo
+echo
+echo "#########################################"
+echo "j4-dmenu-desktop installed"
+echo "#########################################"
+sleep 3

@@ -15,7 +15,7 @@ cd Step_1
 
 cd 1-i3-from-repo
 
-sh install_i3_version_4.11_from_repositories.sh
+sh install_i3_version_4.11_from_repositories-v1.sh
 
 cd ..
 
@@ -33,7 +33,7 @@ cd Step_2
 
 cd j4_dmenu_desktop
 
-sh j4-dmenu-desktop_install.sh
+sh j4-dmenu-desktop_install-v1.sh
 
 cd ..
 
@@ -41,6 +41,11 @@ cd ..
 
 cd Step_3
 
-sh install-extra-software.sh
+sh install-extra-software-v1.sh
 
-echo "DONE!"
+echo
+echo
+echo "#################################################"
+echo "All done. Log off and log back in with i3"
+echo "#################################################"
+sleep 3

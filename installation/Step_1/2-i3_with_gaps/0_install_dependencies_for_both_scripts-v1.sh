@@ -69,7 +69,7 @@ sudo apt-get install -y libstartup-notification0-dev libxcb-randr0-dev libev-dev
 
 echo
 echo
-echo "###############################"
-echo "All done"
-echo "###############################"
+echo "#########################################"
+echo "dependencies for i3 with gaps installed"
+echo "#########################################"
 sleep 5

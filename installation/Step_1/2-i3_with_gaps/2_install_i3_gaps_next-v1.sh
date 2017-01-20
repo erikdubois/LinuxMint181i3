@@ -72,13 +72,13 @@ make && sudo make install
 
 rm -rf /tmp/Airblader
 
-echo "You installed following version"
+echo "You installed the following version"
 echo
 echo
 i3 --version
 echo
 echo
-echo "###############################"
-echo "All done"
-echo "###############################"
-sleep 5
+echo "##################################################"
+echo "Latest possible version of i3 with gaps installed"
+echo "##################################################"
+sleep 3

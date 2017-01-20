@@ -75,8 +75,8 @@ sudo apt-get install dmenu
 echo
 echo
 echo "###############################"
-echo "All done"
+echo "i3 from repositories installed"
 echo "###############################"
-sleep 2
+sleep 3
 
 

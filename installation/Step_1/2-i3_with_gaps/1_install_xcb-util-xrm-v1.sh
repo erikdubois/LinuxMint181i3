@@ -68,6 +68,6 @@ rm -rf /tmp/xcb-util-xrm
 echo
 echo
 echo "###############################"
-echo "All done"
+echo "Xcb-util-xrm installed"
 echo "###############################"
-sleep 5
+sleep 3
