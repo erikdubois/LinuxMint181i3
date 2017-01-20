@@ -338,8 +338,8 @@ Check out google + for images : https://plus.google.com/u/0/collection/MI2kZB
 
 Distro's covered already : 
 	
-	http://erikdubois.be/tag/i3/
-	http://erikdubois.be/category/linux/i3/
+http://erikdubois.be/tag/i3/
+http://erikdubois.be/category/linux/i3/
 
 Linux Mint 18.1 Cinnamon
 
