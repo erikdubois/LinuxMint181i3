@@ -156,7 +156,7 @@ fi
 
 echo
 echo
-echo "#################################################"
-echo "All done. Log off and log back in with i3"
-echo "#################################################"
+echo "#########################################################"
+echo "Everything to work comfortably in i3 has been installed"
+echo "#########################################################"
 sleep 3
