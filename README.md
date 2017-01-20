@@ -60,6 +60,8 @@ Folder <b>Installation</b> is the sequence of the installation procedure you can
 
 Let us install I3 first. Go inside the folder <b>Installation</b>. You will find folders that are to be run in sequence. The folders are named according to our titles.
 
+To make my installations quicker (after first time installation) I have created an **auto-installvx.sh**.
+
 # Step 1
 
 ###Folder 1-i3-from-repo
