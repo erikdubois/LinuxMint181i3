@@ -176,11 +176,14 @@ The other file is a bit deeper in the folder structure.
 
 You can also use **qtconfig-qt4** to change settings.
 
+
+
 # Conky
 
 You installed the software for conky in Step_3
 
 If you want to have a status bar based on a conky, you can now choose to have it in the options in the config file.
+
 
 
 ## I3 is MADE for DUAL and more SCREENS
@@ -209,9 +212,9 @@ There is also an more 'gui' approach if you install arandr.
 
 ## Nitrogen
 
-Use variety. It will provide with awesome images from desktoppr. But if you run into problem you can use this application.
+Use variety for wallpaper changer. It will provide you with awesome images from desktoppr. But if you run into problem you can use this application.
 
-You can set your wallpaper with nitrogen also if variety (or feh) does not prove to work.
+You can set your wallpaper with nitrogen also if variety (or feh another tool that is installed) does not prove to work.
 
 	sudo apt install nitrogen
 
@@ -229,29 +232,30 @@ If in a hurry, you can always check the conky or this website.
 
 You can set your mod key. I have set mine to the Windows Key
 
-This line in your config file you set the windows key or super key.
+**This line in your config file will set the windows key or super key.**
 
 	set $mod Mod4
 
 Some commands working with the Mod Key (windows key)
 
-Mod + SHIFT + E  = to exit i3 and log back on with Cinnamon
+$mod + SHIFT + E  = to exit i3 and log back on with Cinnamon
 
-Mod + D  = dmenu
+$mod + D  = dmenu
 
-Mod + SHIFT + D = j4_dmenu
+$mod + SHIFT + D = j4_dmenu
 
-Mod + Enter = terminal
+$mod + Enter = terminal
 
-Mod + SHIFT + Enter= nemo (file manager)
+$mod + SHIFT + Enter= nemo (file manager)
 
-Mod + SHIFT + Q = end current program (move mouse over it)
+$mod + SHIFT + Q = end current program (move mouse over it)
 
 
 ##Assign section
 
-Remember the 10 possible screens in the bottom-left corner.
-I have positioned some programs on some specific desktops.
+You will have 10 possible workspaces in the bottom-left corner to choose from. They will be visible if a program is activated on them.
+
+I have positioned some programs on some specific desktops. I know them by heart. And there is a structure in my system. You can see it here down below.
 
 assign [class="Firefox|Vivaldi-stable|Opera"]                                       → 1
 assign [class="sublime-text|sublime_text|Sublime_text|subl|Subl|subl3|Subl3"]       → 2
@@ -266,12 +270,12 @@ assign [class="Nemo|Thunar|Caja|nautilus|Nautilus"]                             
 assign [class="Geary|Evolution"]                                                    → 9
 assign [class="Spotify|spotify"]                                                    → 10
 
-Tip : if you use sublime-text. It gives us 'nag screens' to buy it. They will pop up in workspace 2 because of my setting. 
+Tip : if you use sublime-text. It gives us 'nag screens' to buy it. They will pop up in workspace 2 because of my setting assuming sublime-text is active on another workspace then 2. 
 
 
 ## Reload the config
 
-Mod4 + SHIFT + R = reset or rerun i3 if you change some code in the config file
+$mod + SHIFT + R = reset or rerun i3 if you change some code in the config file
 
 
 ## Start up programs with CTRL + ALT + ...
