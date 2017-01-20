@@ -86,7 +86,7 @@ Then we need to run a script to install a xcb-util-xrm. This package is not yet 
 	1_install_xcb-util-xrm-vx.sh
 
 
-Next we will run a script to get I3 and its dependancies (version 4.12) with the possibility to have [gaps between the windows](https://github.com/Airblader/i3) by running
+Next we will run a script to get I3 and its dependancies (version 4.13) with the possibility to have [gaps between the windows](https://github.com/Airblader/i3) by running
 
 	2_install_i3_gaps_next-vx.sh
 
@@ -126,7 +126,7 @@ You will install
 - terminator - different terminal you can fine-tune in look
 
 
-Double click the awesome font to install it. You will need it for the conkybar in the config file.
+Double click the **awesome font** to install it. You will need it for the conkybar in the config file.
 
 
 # Step 4
