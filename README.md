@@ -52,15 +52,11 @@ Then
 
 This folder, you are downloading, is all you will need to get I3 working <b>the easy way</b>.
 
-##Contents of the github
-
-Folder <b>Installation</b> is the sequence of the installation procedure you can follow till the last one or not.
-
-Folder for your <b>I3</b> installation is the top level of the github. Config file is THE document you need to get a working i3wm.
-
 
 
 # Installation Procedure of I3
+
+Folder <b>Installation</b> is the sequence of the installation procedure you can follow. I recommend to install all of them.
 
 Let us install I3 first. Go inside the folder <b>Installation</b>. You will find folders that are to be run in sequence. The folders are named according to our titles.
 
@@ -133,12 +129,12 @@ When you install i3 it will make an hidden folder in this location, once you log
 
 	~/.config/i3
 
-You have to copy/paste the content of the i3 folder into <b>~/.config/i3</b>.
+You have to copy/paste the content of the github folder into <b>~/.config/i3</b>.
 
 You have to make this folder yourself IF you skipped step 1. It is normal that you do not have it since you never logged in with I3 yet.
 
 
-Some explanations
+Some explanations of files/folders
 
 + config is the most important file - here all the settings of I3 that can be changed
 + i3status.conf is the standard bar configuration file for you bottom panel that can be changed
@@ -151,7 +147,11 @@ Some explanations
 + conky system-overview conky will show process and memory
 + conky system-shortcuts conky will help you with the shortcuts
 
+Folder <b>config_backups</b> holds all the older config files of i3. Recommended to keep copies.
 
+Folder <b>Installation</b> is the sequence of the installation procedure you can follow. I recommend to install all of them.
+
+Folder <b>scripts</b> is where all scripts and future scripts. You will need those to quit, sleep, lock, ... i3.
 
 ## Change the looks
 
