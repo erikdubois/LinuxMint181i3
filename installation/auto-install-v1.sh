@@ -43,4 +43,8 @@ cd Step_3
 
 sh install-extra-software-v1.sh
 
+cd ..
 
+cd Step_4
+
+sh copy-i3-files-to-config-i3-folder-v1.sh
