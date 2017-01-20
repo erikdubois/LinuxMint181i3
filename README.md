@@ -147,7 +147,7 @@ Some explanations of files/folders
 + start-conky-i3statusbar.sh is the the application that will start next line
 + conky-i3statusbar - alternative bar made with conky
 + i3blocks.conf - alternative bar with scripts from i3blocks
-+ i3exit.sh is used to logoff, exit, reboot etc - no need to change this
++ i3exit.sh is used to logoff, exit, reboot etc - no need to change this (in folder scripts)
 + compton.conf is taking care of the windows (shadow, transparency, ...)
 + start-conkys.sh will start the two conky's present 
 + conky system-overview conky will show process and memory
