@@ -332,6 +332,14 @@ Spotify will start on workspace 10.
 
 # E N D   R E S U L T
 
+The fun is that i3wm can run on many distro's. So you can move your i3 config to other distro's.
+
+Check out google + for images : https://plus.google.com/u/0/collection/MI2kZB
+
+Distro's covered already : 
+	
+	http://erikdubois.be/tag/i3/
+	http://erikdubois.be/category/linux/i3/
 
 Linux Mint 18.1 Cinnamon
 
