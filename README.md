@@ -131,18 +131,18 @@ Double click the **awesome font** to install it. You will need it for the conkyb
 
 # Step 4
 
-When you install i3 it will make an hidden folder in this location, once you login.
+When you install i3 the script in step 1 will make a hidden folder in this location.
 
 	~/.config/i3
 
 You have to copy/paste the content of the github folder into <b>~/.config/i3</b>.
 
-You have to make this folder yourself IF you skipped step 1. It is normal that you do not have it since you never logged in with I3 yet.
+You have to make this folder yourself IF you skipped step 1. It is normal that you do not have it since you never logged in with i3wm yet.
 
 
 Some explanations of files/folders
 
-+ config is the most important file - here all the settings of I3 that can be changed
++ **config** is the most **important** file - here all the settings of I3 that can be changed
 + i3status.conf is the standard bar configuration file for you bottom panel that can be changed
 + start-conky-i3statusbar.sh is the the application that will start next line
 + conky-i3statusbar - alternative bar made with conky
