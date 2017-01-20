@@ -258,16 +258,27 @@ You will have 10 possible workspaces in the bottom-left corner to choose from. T
 I have positioned some programs on some specific desktops. I know them by heart. And there is a structure in my system. You can see it here down below.
 
 assign [class="Firefox|Vivaldi-stable|Opera"]                                       → 1
+
 assign [class="sublime-text|sublime_text|Sublime_text|subl|Subl|subl3|Subl3"]       → 2
+
 assign [class="Xed|xed|Brackets|Atom|Code"]                                         → 2
+
 assign [class="Inkscape"]                                                           → 3
+
 assign [class="Gimp"]                                                               → 4
+
 assign [class="ristretto|Ristretto|shotwell|Shotwell"]                              → 5
+
 assign [class="Meld"]                                                               → 5
+
 assign [class="feh|gthumb|Gthumb|eog|Eog|Pinta|pixeluvo|Pixeluvo"]                  → 5
+
 assign [class="Vlc|vlc"]                                                            → 6
+
 assign [class="Nemo|Thunar|Caja|nautilus|Nautilus"]                                 → 8
+
 assign [class="Geary|Evolution"]                                                    → 9
+
 assign [class="Spotify|spotify"]                                                    → 10
 
 Tip : if you use sublime-text. It gives us 'nag screens' to buy it. They will pop up in workspace 2 because of my setting assuming sublime-text is active on another workspace then 2. 
