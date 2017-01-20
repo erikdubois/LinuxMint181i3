@@ -581,7 +581,6 @@ bindsym Control+Print exec gnome-screenshot -i
 #for_window [class="Gnome-disks"] floating enable
 for_window [class="^Skype$"] floating enable
 for_window [class="^Gnome-font-viewer$"] floating enable
-#for_window [class="^Thunar$"] floating enable
 for_window [class="^Gpick$"] floating enable
 #for_window [class="^Vlc$"] floating enable
 #for_window [class="^Spotify$"] floating enable workspace 10
@@ -590,6 +589,7 @@ for_window [window_role="^gimp-toolbox-color-dialog$"] floating enable
 for_window [instance="variety"] floating enable
 #for_window [class="Gnome-system-monitor"] floating enable
 #for_window [class="Mate-system-monitor"] floating enable
+#for_window [class="Xfce4-taskmanager"] floating enable
 #for_window [class="Brasero"] floating enable
 #for_window [class="Xfburn"] floating enable
 for_window [class="Xfce4-appfinder"] floating enable
@@ -609,11 +609,10 @@ for_window [class="Unetbootin.elf"] floating enable
 for_window [class="Galculator"] floating enable
 for_window [class="Usb-creator-gtk"] floating enable
 for_window [instance="script-fu"] border normal
-#for_window [class="Xfce4-taskmanager"] floating enable
 for_window [class="Imagewriter"] floating enable
-for_window [class="MintUpdate.py"] floating enable
+#for_window [class="MintUpdate.py"] floating enable
 #for_window [class="Bleachbit"] floating enable
-for_window [class="Hexchat"] floating disable
+#for_window [class="Hexchat"] floating disable
 
 #Popups during fullscreen mode
 popup_during_fullscreen smart
