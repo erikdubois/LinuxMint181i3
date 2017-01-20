@@ -949,7 +949,7 @@ bindsym $mod+Return exec gnome-terminal;focus
 #bindsym $mod+Return exec terminator;focus
 #bindsym $mod+Return exec mate-terminal;focus
 #bindsym $mod+Return exec xfce4-terminal;focus
-#bindsym $mod+Return exec terminator;focus
+
 
 bindsym control+mod1+t exec gnome-terminal; focus
 #bindsym control+mod1+t exec terminator;focus
