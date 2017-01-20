@@ -21,9 +21,9 @@ cd ..
 
 cd 2-i3_with_gaps
 
-sh 0_install_dependencies_for_both_scripts.sh
-sh 1_install_xcb-util-xrm.sh
-sh 2_install_i3_gaps_next.sh
+sh 0_install_dependencies_for_both_scripts-v1.sh
+sh 1_install_xcb-util-xrm-v1.sh
+sh 2_install_i3_gaps_next-v1.sh
 
 cd ..
 
