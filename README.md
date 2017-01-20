@@ -60,7 +60,7 @@ Folder <b>Installation</b> is the sequence of the installation procedure you can
 
 Let us install I3 first. Go inside the folder <b>Installation</b>. You will find folders that are to be run in sequence. The folders are named according to our titles.
 
-To make my installations quicker (after first time installation) I have created an **auto-installvx.sh**.
+To make my installations quicker (after first time installation) I have created an **auto-install-vx.sh**.
 
 # Step 1
 
@@ -70,6 +70,10 @@ First we will get I3 from the Linux Mint Repositories (version 4.11) by running 
 
 	install_i3_version_4.11_from_repositories.sh
 
+	I have added a line in this script to add the hidden folder in 
+
+	 ~/.config/i3
+
 ###Folder 2-i3_with_gaps
 
 Install first the dependencies.
@@ -77,7 +81,7 @@ Install first the dependencies.
 	0_install_dependencies_for_both_scripts.sh
 
 
-Then we need to run a script to install a xcb-util-xrm. This package is not yet included in the repositories at mid september 2016. So we compile it ourselves. In the future this can be done easier if it is in the repo's.
+Then we need to run a script to install a xcb-util-xrm. This package is not yet included in the repositories at mid january 2017. So we compile it ourselves. In the future this can be done easier if it is in the repo's.
 
 	1_install_xcb-util-xrm.sh
 
