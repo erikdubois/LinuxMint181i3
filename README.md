@@ -153,11 +153,11 @@ Some explanations of files/folders
 + conky system-overview conky will show process and memory
 + conky system-shortcuts conky will help you with the shortcuts
 
-Folder <b>config_backups</b> holds all the older config files of i3. Recommended to keep copies.
+Folder <b>config_backups</b> holds all the older config files of i3. Recommended to keep copies since the config files is that important.
 
 Folder <b>Installation</b> is the sequence of the installation procedure you can follow. I recommend to install all of them.
 
-Folder <b>scripts</b> is where all scripts and future scripts. You will need those to quit, sleep, lock, ... i3.
+Folder <b>scripts</b> is where all scripts are (and future scripts). You will need those to quit, sleep, lock, ... i3.
 
 ## Change the looks
 
@@ -174,7 +174,7 @@ The other file is a bit deeper in the folder structure.
 
 	~/.config/gtk-3.0/settings.ini
 
-
+You can also use **qtconfig-qt4** to change settings.
 
 # Conky
 
