@@ -43,9 +43,4 @@ cd Step_3
 
 sh install-extra-software-v1.sh
 
-echo
-echo
-echo "#################################################"
-echo "All done. Log off and log back in with i3"
-echo "#################################################"
-sleep 3
+
