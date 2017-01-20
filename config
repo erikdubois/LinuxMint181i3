@@ -342,20 +342,6 @@ mode "resize" {
 font pango:Noto Mono Regular 13
 
 
-################### TERMINAL ######################
-
-# only in need you can figure out hidden settings on your distro with dconf-editor
-# gsettings set org.cinnamon.desktop.default-applications.terminal exec /usr/bin/terminator
-# gsettings set org.cinnamon.desktop.default-applications.terminal exec /usr/bin/gnome-terminal
-
-bindsym $mod+Return exec gnome-terminal;focus
-#bindsym $mod+Return exec i3-sensible-terminal;focus
-#bindsym $mod+Return exec terminator;focus
-#bindsym $mod+Return exec mate-terminal;focus
-#bindsym $mod+Return exec xfce4-terminal;focus
-#bindsym $mod+Return exec terminator;focus
-
-
 ################### MENU ######################
 
 # start dmenu
@@ -497,18 +483,21 @@ exec clipit
 
 # USER APPLICATIONS
 
+#distro dependent applications are at bottom of config like filemanager ...
+
+#browsers
 exec firefox
 for_window [class="Firefox"] focus
+
+#Mail clients
 #exec evolution
+
+#Music
 exec --no-startup-id spotify
 for_window [class="Spotify"] focus
-exec nemo --no-desktop
-for_window [class="Nemo"] focus
-#exec nautilus --no-desktop
-#exec caja
-#exec thunar
+
+#Conky
 #exec ~/.config/i3/start-conkys.sh
-#exec dunst -config ~/.config/i3/dunstrc
 #exec --no-startup-id evolution
 #exec --no-startup-id conky
 
@@ -949,18 +938,35 @@ exec_always compton --config ~/.config/i3/compton.conf
 ################### DISTRO DEPENDENT ######################
 ###########################################################
 
-
 #terminal
+
+# only in need you can figure out hidden settings on your distro with dconf-editor
+# gsettings set org.cinnamon.desktop.default-applications.terminal exec /usr/bin/terminator
+# gsettings set org.cinnamon.desktop.default-applications.terminal exec /usr/bin/gnome-terminal
+
+bindsym $mod+Return exec gnome-terminal;focus
+#bindsym $mod+Return exec i3-sensible-terminal;focus
+#bindsym $mod+Return exec terminator;focus
+#bindsym $mod+Return exec mate-terminal;focus
+#bindsym $mod+Return exec xfce4-terminal;focus
+#bindsym $mod+Return exec terminator;focus
+
 bindsym control+mod1+t exec gnome-terminal; focus
 #bindsym control+mod1+t exec terminator;focus
 #bindsym control+mod1+t exec mate-terminal; focus
 #bindsym control+mod1+t exec xfce4-terminal; focus
 
+
 #System monitor
 bindsym control+Shift+Escape exec gnome-system-monitor;focus
+#bindsym control+Shift+Escape exec mate-system-monitor;focus
 #bindsym control+Shift+Escape exec xfce4-taskmanager;focus
-#bindsym control+Shift+Escape exec xfce4-taskmanager;focus
-#bindsym control+Shift+Escape exec xfce4-taskmanager;focus
+
+#settings
+bindsym control+mod1+n exec cinnamon-settings
+#bindsym control+mod1+n exec gnome-control-center
+#bindsym control+mod1+n exec mate-settings-manager
+#bindsym control+mod1+n exec xfce4-settings-manager
 
 
 #workspace 2 related
@@ -975,10 +981,23 @@ bindsym $mod+F8 exec nemo --no-desktop;workspace 8;focus
 #bindsym $mod+F8 exec caja;workspace 8;focus
 #bindsym $mod+F8 exec thunar;workspace 8;focus
 
+#file managers
+
+exec nemo --no-desktop
+#exec nautilus --no-desktop
+#exec caja
+#exec thunar
+
+#filemanager focus
+for_window [class="Nemo"] focus
+for_window [class="Nautilus"] focus
+for_window [class="Caja"] focus
+for_window [class="Thunar"] focus
+
 bindsym $mod+Shift+Return exec nemo --no-desktop; workspace 8;focus
+#bindsym $mod+Shift+Return exec nautilus --no-desktop; workspace 8;focus
 #bindsym $mod+Shift+Return exec caja; workspace 8;focus
 #bindsym $mod+Shift+Return exec thunar; workspace 8;focus
-#bindsym $mod+Shift+Return exec nautilus --no-desktop; workspace 8;focus
 
 bindsym control+mod1+b exec nemo --no-desktop;workspace 8;focus
 #bindsym control+mod1+b exec nautilus --no-desktop;workspace 8;focus
@@ -986,7 +1005,9 @@ bindsym control+mod1+b exec nemo --no-desktop;workspace 8;focus
 #bindsym control+mod1+b exec thunar;workspace 8;focus
 
 
+# USER APPLICATIONS TO START AT BOOT
 
+#sublime-text
 exec subl
 #exec subl3
 
@@ -999,14 +1020,13 @@ exec subl
 exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 
 # update
+
+#Linux Mint
 exec mintupdate-launcher
+
+# Arch
 #exec pamac-tray
 
 # bluetooth
 exec blueberry-tray
 #exec --no-startup-id blueman-applet
-
-#settings
-bindsym control+mod1+n exec cinnamon-settings
-#bindsym control+mod1+n exec gnome-control-center
-

@@ -1,4 +1,4 @@
-# Installing i3 on Linux Mint 18.1 Cinnamon
+# Installing i3 on Linux Mint 18.1 Cinnamon or XFCE or Mate
 
 I3 = [improved tiling windows manager](https://i3wm.org/)
 
