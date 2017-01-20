@@ -1,5 +1,7 @@
 # Installing i3 on Linux Mint 18.1 Cinnamon or XFCE or Mate
 
+**Remember to set the distro dependent application at the bottom of the config file like file managers.**
+
 I3 = [improved tiling windows manager](https://i3wm.org/)
 
 We start from an up-to-date Linux Mint 18.1 Cinnamon as described on 
