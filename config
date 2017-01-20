@@ -966,7 +966,7 @@ bindsym control+Shift+Escape exec gnome-system-monitor;focus
 #settings
 bindsym control+mod1+n exec cinnamon-settings
 #bindsym control+mod1+n exec gnome-control-center
-#bindsym control+mod1+n exec mate-settings-manager
+#bindsym control+mod1+n exec mate-control-center
 #bindsym control+mod1+n exec xfce4-settings-manager
 
 
