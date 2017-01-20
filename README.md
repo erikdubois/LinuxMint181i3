@@ -70,7 +70,7 @@ First we will get I3 from the Linux Mint Repositories (version 4.11) by running 
 
 	install_i3_version_4.11_from_repositories.sh
 
-	I have added a line in this script to add the hidden folder in 
+	I have added a line in this script to add the hidden folder
 
 	 ~/.config/i3
 
