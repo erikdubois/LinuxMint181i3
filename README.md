@@ -7,7 +7,9 @@ http://erikdubois.be.
 
 As described here at [this github](https://github.com/erikdubois/Ultimate-Linux-Mint-18-Cinnamon) for Linux Mint 18 Cinnamon or [this github](https://github.com/erikdubois/Ultimate-Linux-Mint-18.1-Cinnamon) for Linux Mint 18.1 Cinnamon.
 
-or described in [this youtube movie](https://www.youtube.com/watch?v=5db66Dt0j4E).
+or described in [this youtube movie](https://www.youtube.com/watch?v=5db66Dt0j4E) for Linux Mint 18
+
+or described in this article at http://erikdubois.be/overview-of-linux-mint-18-1-cinnamon/ for Linux Mint 18.1.
 
 You will end up with all the needed icons and applications we will use in the I3 tutorials.
 
