@@ -463,9 +463,6 @@ for_window [class="Spotify"] move to workspace 10
 
 # num lock activated
 exec_always --no-startup-id numlockx on
-# network
-#exec --no-startup-id nm-applet
-exec network-manager-applet
 # dropbox
 exec dropbox start
 # insync
@@ -586,7 +583,7 @@ for_window [class="^Gpick$"] floating enable
 #for_window [class="^Spotify$"] floating enable workspace 10
 #for_window [instance="gimp"] floating enable
 for_window [window_role="^gimp-toolbox-color-dialog$"] floating enable
-for_window [instance="variety"] floating enable
+#for_window [instance="variety"] floating enable
 #for_window [class="Gnome-system-monitor"] floating enable
 #for_window [class="Mate-system-monitor"] floating enable
 #for_window [class="Xfce4-taskmanager"] floating enable
@@ -615,6 +612,7 @@ for_window [class="Imagewriter"] floating enable
 #for_window [class="Hexchat"] floating disable
 for_window [class="Xfce4-settings-manager"] floating disable
 for_window [class="Gnome-control-center"] floating disable
+for_window [class="Gnome-terminal"] focus
 
 #Popups during fullscreen mode
 popup_during_fullscreen smart
@@ -712,7 +710,7 @@ new_float normal
 
 # AZERTY KEYBOARD
 # Change this if you use qwerty
-# exec setxkbmap be
+exec setxkbmap be
 
 
 ###################       UNCLUTTER      ##############################
@@ -1015,7 +1013,7 @@ exec subl
 
 #Authentication dialog
 
-#arch budgie
+#arch/antergos
 #exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
 #Linux Mint
@@ -1032,3 +1030,10 @@ exec mintupdate-launcher
 # bluetooth
 exec blueberry-tray
 #exec --no-startup-id blueman-applet
+
+# network
+#antergos
+exec --no-startup-id nm-applet
+
+#linux mint
+#exec network-manager-applet
