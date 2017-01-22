@@ -34,7 +34,7 @@ conky.config = {
 conky.text = [[
   [
     {
-      "full_text": " Linux Mint 18 Cinnamon $kernel ",
+      "full_text": " ${execi 6000 lsb_release -d | grep 'Descr'|awk {'print $2 " " $3" " $4" " $5'}} $kernel ",
       "color": "\#fdf6e3",
       "background": "\#dc322f",
       "separator": true,
@@ -99,9 +99,9 @@ conky.text = [[
     },
     {
       #linux mint
-      "full_text": " ${exec amixer get Master | grep % | awk '{print $4}' | sed 's/[^0-9\%]//g' | head -n1} ",
+      #"full_text": " ${exec amixer get Master | grep % | awk '{print $4}' | sed 's/[^0-9\%]//g' | head -n1} ",
       #arch linux
-      #"full_text": " ${exec amixer get Master | grep % | awk '{print $5}' | sed 's/[^0-9\%]//g' | head -n1} ",
+      "full_text": " ${exec amixer get Master | grep % | awk '{print $5}' | sed 's/[^0-9\%]//g' | head -n1} ",
       "color": "\#fdf6e3",
       "background": "\#859900",
       "separator": true,
