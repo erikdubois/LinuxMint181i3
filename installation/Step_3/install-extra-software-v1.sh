@@ -80,6 +80,9 @@ sudo apt-get install -y notify-osd
 # get the mouse out of the way
 sudo apt-get install -y unclutter
 
+# to know what system you are on normally installed
+sudo apt-get install -y lsb-release
+
 # panel icon for sound
 # sudo apt-get install -y volti
 sudo apt-get install  -y pasystray paman paprefs pavumeter pulseaudio-module-zeroconf
