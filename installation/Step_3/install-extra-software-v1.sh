@@ -119,6 +119,11 @@ echo "################################################################"
 echo "Installing the awesome fonts if you do not have it yet - with choice"
 echo "You will need it for icons in the conky taskbar"
 
+echo "removing older awesome versions"
+
+rm ~/.local/share/fonts/fontawesome-webfont.ttf
+rm ~/.fonts/fontawesome-webfont.ttf
+
 FONT="awesome"
 
 
