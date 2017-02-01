@@ -1037,5 +1037,5 @@ exec blueberry-tray
 #antergos
 exec --no-startup-id nm-applet
 
-#linux mint
+#install this program for applet
 #exec network-manager-applet
