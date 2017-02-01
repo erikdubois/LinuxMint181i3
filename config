@@ -584,7 +584,7 @@ for_window [class="^Gpick$"] floating enable
 #for_window [class="^Spotify$"] floating enable workspace 10
 #for_window [instance="gimp"] floating enable
 for_window [window_role="^gimp-toolbox-color-dialog$"] floating enable
-#for_window [instance="variety"] floating enable
+for_window [instance="variety"] floating enable
 #for_window [class="Gnome-system-monitor"] floating enable
 #for_window [class="Mate-system-monitor"] floating enable
 #for_window [class="Xfce4-taskmanager"] floating enable
@@ -748,6 +748,7 @@ bar {
 
     # https://github.com/vivien/i3blocks
     # another way to provide text in the statusbar
+   
     # put hastag in front if not installed
 
 #status_command i3blocks
@@ -1034,8 +1035,5 @@ exec blueberry-tray
 #exec --no-startup-id blueman-applet
 
 # network
-#antergos
+#antergos/linux mint
 exec --no-startup-id nm-applet
-
-#linux mint
-#exec network-manager-applet
