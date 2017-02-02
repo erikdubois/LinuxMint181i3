@@ -1025,7 +1025,7 @@ exec subl
 exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 
 #solus
-exec budgie-polkit-dialog
+#exec budgie-polkit-dialog
 
 # update
 
