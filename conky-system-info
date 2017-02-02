@@ -77,28 +77,34 @@ xftalpha 0.9
 default_color FFFFFF
 default_outline_color 000000
 default_shade_color 000000
+color1 FFA726
+color2 dddddd
+color3 aaaaaa
+color4 888888
+color5 CCCCCC
+color6 FFFFFF
 ###End Color###
 
 
 
 
 TEXT
-${voffset 4}${font Ubuntu:size=20}${alignc}${time %l}:${time %M} ${time %p}${font}
+${color2}${voffset 4}${font Ubuntu:size=20}${alignc}${time %l}:${time %M} ${time %p}${font}
 ${voffset 4}${font Ubuntu:size=12}${alignc}${time %A} ${time %B} ${time %e}, ${time %Y}${font}
 
 ${font Ubuntu:size=10}${voffset 2}S Y S T E M   ${hr 2}${font}
-${voffset 8}Hostname: ${alignr}${nodename}   v3.0.2
-Distro:${alignr}Solus Budgie 1.2.1
-Kernel: ${alignr}${exec uname} ${exec uname -r}
-#Nvidia: ${alignr}${execp  nvidia-smi --query-supported-clocks=gpu_name --format=csv,noheader}
-#Nvidia Driver: ${alignr}${execi 60000 nvidia-smi | grep "Driver Version"| awk {'print $3'}}
-Uptime: ${alignr}${uptime}
+${color1}${voffset 8}Hostname: ${color}${alignr}${nodename}   v3.0.2
+${color1}Distro:${color}${alignr}Solus Budgie 1.2.1
+${color1}Kernel: ${color}${color}${alignr}${exec uname} ${exec uname -r}
+${color1}#Nvidia: ${color}${alignr}${execp  nvidia-smi --query-supported-clocks=gpu_name --format=csv,noheader}
+#Nvidia Driver: ${color}${alignr}${execi 60000 nvidia-smi | grep "Driver Version"| awk {'print $3'}}
+${color1}Uptime: ${color}${alignr}${uptime}
 
-${font Ubuntu:size=10}P R O C E S S O R S  ${hr 2}${font}
+${color2}${font Ubuntu:size=10}P R O C E S S O R S  ${hr 2}${font}${color}
 
-CPU Freq: $alignr${freq}MHz
-CPU Temp: $alignr${execi 10 sensors | grep 'Core 0' | awk {'print $3'}}
-History: ${alignr}${cpugraph 8,100}
+${color1}CPU Freq: ${color}$alignr${freq}MHz
+${color1}CPU Temp: ${color}$alignr${execi 10 sensors | grep 'Core 0' | awk {'print $3'}}
+${color1}History: ${color}${alignr}${cpugraph 8,100}
 
 ${font StyleBats:size=20}A${font}${offset 8}${voffset -12}CPU Core 1: ${alignr}${offset -10}${cpu cpu1}%${alignr}${cpubar cpu1}
 ${offset 30}CPU Core 2: ${alignr}${offset -10}${cpu cpu2}%${alignr}${cpubar cpu2}
