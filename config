@@ -496,6 +496,8 @@ for_window [class="Spotify"] focus
 
 #Conky
 #exec ~/.config/i3/start-conkys.sh
+#exec conky -c ~/.config/i3/conky-skeleton
+#exec conky -c ~/.config/i3/conky-system-info
 #exec --no-startup-id evolution
 #exec --no-startup-id conky
 
@@ -1021,6 +1023,9 @@ exec subl
 
 #Linux Mint
 exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
+
+#solus
+exec budgie-polkit-dialog
 
 # update
 
