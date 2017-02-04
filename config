@@ -468,10 +468,7 @@ exec_always --no-startup-id numlockx on
 exec dropbox start
 # insync
 exec insync start
-# volume
-exec pasystray
-#exec volti
-#exec volumeicon
+
 #variety
 exec variety
 
@@ -1045,4 +1042,11 @@ exec --no-startup-id nm-applet
 
 #install this program for applet
 #exec network-manager-applet
+
+# volume
+exec pasystray
+#solus
+#exec mate-volume-control-applet
+#exec volti
+#exec volumeicon
 
