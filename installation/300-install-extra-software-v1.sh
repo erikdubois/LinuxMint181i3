@@ -11,7 +11,8 @@ echo "Everything to work comfortably in i3 will be installed"
 echo "#########################################################"
 
 # core applications
-sudo apt-get install -y i3lock i3status i3-wm 
+sudo apt-get install -y i3lock i3status
+#sudo apt-get install -y i3-wm  
 sudo apt-get install -y dmenu
 
 # conky
