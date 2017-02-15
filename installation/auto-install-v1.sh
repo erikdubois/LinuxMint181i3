@@ -11,40 +11,26 @@
 #
 ##################################################################################################################
 
-cd Step_1
+echo "Let us install i3"
 
-cd 1-i3-from-repo
+#no need to run this if you want the latest version from github
+#sh 50-install-i3-version-4.11-from-repositories-v1.sh
 
-#sh install_i3_version_4.11_from_repositories-v1.sh
+sh 100-install-dependencies-v1.sh
+sh 110-install-xcb-util-xrm-v1.sh
+sh 120-install-i3-gaps-next-v1.sh
 
-cd ..
+sh 200-install-j4-dmenu-desktop-v1.sh
 
-cd 2-i3_with_gaps
+sh 300-install-extra-software-v1.sh
 
-sh 0_install_dependencies_for_both_scripts-v1.sh
-sh 1_install_xcb-util-xrm-v1.sh
-sh 2_install_i3_gaps_next-v1.sh
+sh 400-install-fonts-v1.sh
 
-cd ..
+sh 600-copy-personal-settings.sh
 
-cd ..
+sh 1000-copy-i3-files-to-config-i3-folder-v2.sh
 
-cd Step_2
+echo "################################################################"
+echo "##############  Auto script terminated         #################"
+echo "################################################################"
 
-cd j4_dmenu_desktop
-
-sh j4-dmenu-desktop_install-v1.sh
-
-cd ..
-
-cd ..
-
-cd Step_3
-
-sh install-extra-software-v1.sh
-
-cd ..
-
-cd Step_4
-
-sh copy-i3-files-to-config-i3-folder-v2.sh
