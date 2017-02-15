@@ -1,6 +1,9 @@
-# Installing i3 on Linux Mint 18.1 Cinnamon, Xfce or Mate
+# Installing i3 on Linux Mint 18.1 Cinnamon, Mate or Xfce
 
 I3 = [improved tiling windows manager](https://i3wm.org/) and this is its base of operations.
+
+
+## Installation of Linux Mint 18.1 Cinnamon, Mate or Xfce
 
 We start from an up-to-date and clean install of Linux Mint 18.1 Cinnamon, XFCE or MATE as described on 
 http://erikdubois.be.
@@ -14,15 +17,18 @@ Installation instructions for the [Installation of Linux Mint 18.1 Xfce](http://
 When you follow these movies/articles and the installation scripts on github, you will end up with all the needed icons and applications you will see me use in the I3 tutorials.
 
 
-
-#Linux Mint 18.1 
+Linux Mint 18.1 
 
 ![Screenshots](http://i.imgur.com/mNenIjf.jpg)
 
 
+## Installation of i3 on Cinnamon, Mate or Xfce
+
+Checkout the installation articles on http://erikdubois.be/category/linux/i3/installation-of-i3/ and follow the instructions to come to these results.
 
 
 #Linux Mint 18.1 booted into i3
+
 
 ![Screenshots](http://i.imgur.com/CRKtVRV.jpg)
 
@@ -33,21 +39,10 @@ When you follow these movies/articles and the installation scripts on github, yo
 ![Screenshots](http://i.imgur.com/5RZaVMg.jpg)
 
 
-
 ![Screenshots](http://i.imgur.com/irN98nN.jpg)
 
 
 ![Screenshots](http://i.imgur.com/UcmfwmS.jpg)
-
-
-![Screenshots](http://i.imgur.com/Xz1Q0ss.jpg)
-
-
-![Screenshots](http://i.imgur.com/ogYQLaV.jpg)
-
-
-![Screenshots](http://i.imgur.com/JExirXa.jpg)
-
 
 
 
