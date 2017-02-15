@@ -51,6 +51,9 @@ sudo apt-get install  -y pasystray paman paprefs pavumeter pulseaudio-module-zer
 # different terminal for nemo
 sudo apt-get install -y gnome-terminal nemo
 
+# Cursor theme
+sudo apt-get install -y breeze-cursor-theme
+
 
 # playerctl for music 
 #https://github.com/acrisci/playerctl/releases
