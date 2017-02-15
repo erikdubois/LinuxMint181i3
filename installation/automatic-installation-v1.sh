@@ -30,6 +30,8 @@ sh 410-install-icons-v1.sh
 
 sh 420-install-themes-v1.sh
 
+sh 430-install-applications-v1.sh
+
 sh 600-copy-personal-settings.sh
 
 sh 900-copy-i3-files-to-config-i3-folder-v2.sh
