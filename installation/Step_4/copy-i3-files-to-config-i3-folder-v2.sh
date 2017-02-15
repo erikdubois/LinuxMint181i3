@@ -196,6 +196,9 @@ fi
 
 
 # copy all config files to this hidden folder
+rm /tmp/$GITHUB/git-v1.sh 
+rm /tmp/$GITHUB/setup-git-v1.sh
+
 cp -rf /tmp/$GITHUB/* ~/.config/i3
 rm -rf /tmp/$GITHUB
 

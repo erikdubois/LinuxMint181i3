@@ -54,6 +54,10 @@
 #
 ##################################################################################################################
 
+# core applications
+sudo apt-get install -y i3lock i3status i3-wm 
+sudo apt-get install -y dmenu
+
 # conky
 sudo apt-get install -y conky-all
 

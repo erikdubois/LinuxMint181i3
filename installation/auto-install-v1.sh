@@ -15,7 +15,7 @@ cd Step_1
 
 cd 1-i3-from-repo
 
-sh install_i3_version_4.11_from_repositories-v1.sh
+#sh install_i3_version_4.11_from_repositories-v1.sh
 
 cd ..
 
@@ -47,4 +47,4 @@ cd ..
 
 cd Step_4
 
-sh copy-i3-files-to-config-i3-folder-v1.sh
+sh copy-i3-files-to-config-i3-folder-v2.sh

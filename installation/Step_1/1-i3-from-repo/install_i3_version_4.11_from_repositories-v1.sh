@@ -63,7 +63,7 @@
 
 #Core stuff i3
 sudo apt-get install -y i3 i3lock i3status i3-wm 
-sudo apt-get install dmenu
+sudo apt-get install -y dmenu
 # you will install suckless-tools instead
 
 
