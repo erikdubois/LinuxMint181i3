@@ -13,11 +13,6 @@ Installation instructions for the [Installation of Linux Mint 18.1 Xfce](http://
 
 When you follow these movies/articles and the installation scripts on github, you will end up with all the needed icons and applications you will see me use in the I3 tutorials.
 
-
-Linux Mint 18
-
-![Screenshots](http://i.imgur.com/QSggN1G.jpg)
-
 Linux Mint 18.1 
 
 ![Screenshots](http://i.imgur.com/mNenIjf.jpg)
