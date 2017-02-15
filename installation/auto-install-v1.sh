@@ -28,7 +28,7 @@ sh 400-install-fonts-v1.sh
 
 sh 600-copy-personal-settings.sh
 
-sh 1000-copy-i3-files-to-config-i3-folder-v2.sh
+sh 900-copy-i3-files-to-config-i3-folder-v2.sh
 
 echo "################################################################"
 echo "##############  Auto script terminated         #################"
