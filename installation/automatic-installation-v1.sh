@@ -24,8 +24,6 @@ sh 200-install-j4-dmenu-desktop-v1.sh
 
 sh 300-install-extra-software-v1.sh
 
-sh 400-install-fonts-v1.sh
-
 sh 410-install-icons-v1.sh
 
 sh 420-install-themes-v1.sh
@@ -33,6 +31,8 @@ sh 420-install-themes-v1.sh
 sh 430-install-applications-v1.sh
 
 sh 600-copy-personal-settings.sh
+
+sh 610-install-fonts-v1.sh
 
 sh 900-copy-i3-files-to-config-i3-folder-v2.sh
 
