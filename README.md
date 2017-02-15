@@ -1,17 +1,13 @@
-# Installing i3 on Linux Mint 18.1 Cinnamon, Xfce, Mate or Debian
+# Installing i3 on Linux Mint 18.1 Cinnamon, Xfce or Mate
 
-**Remember the distro dependent applications are at the bottom of the config file like file managers.**
+I3 = [improved tiling windows manager](https://i3wm.org/) and this is its base of operations.
 
-I3 = [improved tiling windows manager](https://i3wm.org/)
-
-We start from an up-to-date Linux Mint 18.1 Cinnamon as described on 
+We start from an up-to-date and clean install of Linux Mint 18.1 Cinnamon, XFCE or MATE as described on 
 http://erikdubois.be.
 
-As described here at [this github](https://github.com/erikdubois/Ultimate-Linux-Mint-18-Cinnamon) for Linux Mint 18 Cinnamon or [this github](https://github.com/erikdubois/Ultimate-Linux-Mint-18.1-Cinnamon) for Linux Mint 18.1 Cinnamon.
-
-or described in [this youtube movie](https://www.youtube.com/watch?v=5db66Dt0j4E) for Linux Mint 18
-
-or described in this article at http://erikdubois.be/overview-of-linux-mint-18-1-cinnamon/ for Linux Mint 18.1.
+[Installation of Linux Mint 18.1 Cinnamon](http://erikdubois.be/how-to-install-linux-mint-18-1-cinnamon-and-redesign-it/)
+[Installation of Linux Mint 18.1 Mate](http://erikdubois.be/how-to-install-linux-mint-18-1-mate-and-redesign-it/)
+[Installation of Linux Mint 18.1 Xfce](http://erikdubois.be/how-to-install-linux-mint-18-1-xfce-and-redesign-it/)
 
 When you follow these movies/articles and the installation scripts on github, you will end up with all the needed icons and applications you will see me use in the I3 tutorials.
 
