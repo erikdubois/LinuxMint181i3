@@ -48,7 +48,7 @@ sudo apt-get install -y lsb-release
 sudo apt-get install  -y pasystray paman paprefs pavumeter pulseaudio-module-zeroconf
 
 # different terminal for nemo
-sudo apt-get install -y gnome-terminal
+sudo apt-get install -y gnome-terminal nemo
 
 
 # playerctl for music 
