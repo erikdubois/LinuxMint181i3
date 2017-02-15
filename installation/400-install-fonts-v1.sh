@@ -7,6 +7,9 @@ set -e
 #
 ##################################################################################################################
 
+[ -d $HOME"/.fonts" ] || mkdir -p $HOME"/.fonts"
+
+
 echo "################################################################" 
 echo "Installing the fonts if you do not have it yet - with choice"
 echo "They are needed for the conky and the statusbar."
