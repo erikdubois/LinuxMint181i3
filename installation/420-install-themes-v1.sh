@@ -7,13 +7,9 @@ set -e
 #
 ##################################################################################################################
 
-sh icons/icons-sardi-extra-v4.sh
+sh icons/theme-arc-colora-collection-3.2-v1.sh
 
 
-sh icons/icons-sardi-v3.sh
-
-
-sh icons/icons-surfn-v4.sh
 
 
 
