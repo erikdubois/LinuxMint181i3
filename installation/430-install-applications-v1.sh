@@ -16,6 +16,6 @@ sudo apt install -y firefox gimp inkscape meld vlc evolution
 
 
 echo "#########################################################"
-echo "Themes have been  installed"
+echo "Applications have been  installed"
 echo "#########################################################"
 sleep 1
