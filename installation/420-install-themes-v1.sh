@@ -7,7 +7,7 @@ set -e
 #
 ##################################################################################################################
 
-sh icons/theme-arc-colora-collection-3.2-v1.sh
+sh themes/theme-arc-colora-collection-3.2-v1.sh
 
 
 
