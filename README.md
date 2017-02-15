@@ -5,11 +5,14 @@ I3 = [improved tiling windows manager](https://i3wm.org/) and this is its base o
 We start from an up-to-date and clean install of Linux Mint 18.1 Cinnamon, XFCE or MATE as described on 
 http://erikdubois.be.
 
-[Installation of Linux Mint 18.1 Cinnamon](http://erikdubois.be/how-to-install-linux-mint-18-1-cinnamon-and-redesign-it/)
-[Installation of Linux Mint 18.1 Mate](http://erikdubois.be/how-to-install-linux-mint-18-1-mate-and-redesign-it/)
-[Installation of Linux Mint 18.1 Xfce](http://erikdubois.be/how-to-install-linux-mint-18-1-xfce-and-redesign-it/)
+Installation instructions for the [Installation of Linux Mint 18.1 Cinnamon](http://erikdubois.be/how-to-install-linux-mint-18-1-cinnamon-and-redesign-it/)
+
+Installation instructions for the [Installation of Linux Mint 18.1 Mate](http://erikdubois.be/how-to-install-linux-mint-18-1-mate-and-redesign-it/)
+
+Installation instructions for the [Installation of Linux Mint 18.1 Xfce](http://erikdubois.be/how-to-install-linux-mint-18-1-xfce-and-redesign-it/)
 
 When you follow these movies/articles and the installation scripts on github, you will end up with all the needed icons and applications you will see me use in the I3 tutorials.
+
 
 Linux Mint 18
 
