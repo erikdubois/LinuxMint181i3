@@ -14,6 +14,6 @@ sh themes/theme-arc-colora-collection-3.2-v1.sh
 
 
 echo "#########################################################"
-echo "Icons have been  installed"
+echo "Themes have been  installed"
 echo "#########################################################"
 sleep 1
