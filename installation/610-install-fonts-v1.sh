@@ -26,7 +26,7 @@ else
     echo "################################################################" 
     echo "The font is not currently installed, would you like to install it now? (y/n)";
     read response
-    if [[ "$response" == [yY] ]]; then
+    if [[ "$response" == "y" ]]; then
         echo "Installing the font to the ~/.fonts directory.";
         cp fonts/fontawesome-webfont.ttf ~/.fonts
         echo "################################################################" 
@@ -66,7 +66,7 @@ else
     echo "################################################################" 
     echo "The font is not currently installed, would you like to install it now? (y/n)";
     read response
-    if [[ "$response" == [yY] ]]; then
+    if [[ "$response" == "y" ]]; then
         echo "Installing the font to the ~/.fonts directory.";
         cp fonts/StyleBats_CleanCut.ttf ~/.fonts
         echo "################################################################" 
