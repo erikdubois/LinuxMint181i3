@@ -73,7 +73,9 @@ else
 	rm -rf /tmp/i3blocks
 	git clone https://github.com/vivien/i3blocks.git /tmp/i3blocks
 	cd /tmp/i3blocks
-	make clean all
+	./autogen.sh
+	./configure
+	make
 	sudo make install
 	rm -rf /tmp/i3blocks
 
